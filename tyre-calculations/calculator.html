@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../tyre-n-tyres-calc.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!--NAVBAR-->
+
+
+  <div class="nav">
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../assets/logo.jpg" alt="TYRE N TYRES logo"
+            class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#calculator">Tyre Upsize Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#brands">Brands</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tyres Details <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../what-tyre.html" target="_blank">What is Tyre?</a>
+                </li>
+                <li><a class="dropdown-item" href="../function.html" target="_blank">Functions</a></li>
+                <li><a class="dropdown-item" href="../tyre-types.html" target="_blank">Tyre Types</a>
+                </li>
+                <li><a class="dropdown-item" href="../tyre-construction.html" target="_blank">Tyre
+                    construction</a></li>
+                <li><a class="dropdown-item" href="../run-flat.html" target="_blank">Run Flat Tyre</a>
+                </li>
+                <li><a class="dropdown-item" href="../replacement.html" target="_blank">Replacement</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tyre Calculations <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="calculator.html" target="_blank">Calculator</a></li>
+                <li><a class="dropdown-item" href="plus-sizing.html" target="_blank">Plus Sizing</a>
+                </li>
+                <li><a class="dropdown-item" href="how-tyre-conversion.html" target="_blank">How Tyre
+                    Conversion?</a></li>
+                <li><a class="dropdown-item" href="aspect-ratio.html" target="_blank">Aspect Ratio</a>
+                </li>
+                <li><a class="dropdown-item" href="chamber-of-horrow.html" target="_blank">Chamber Of
+                    Horrow</a></li>
+                <li><a class="dropdown-item" href="breaking-distance.html" target="_blank">Breaking
+                    Distance</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#contact">Contact Us</a>
+            </li>
+
+        </div>
+      </div>
+  </div>
+  </nav>
+
+  <!--TYRE-DIMENSION-->
+
+  <div class="container-fluid">
+    <div class="tyre-dimension">
+      <h2 class="text-center">Calculating Tyre Dimension’s (Overall Diameter)</h2>
+      <div class="col-md-12">
+        <div class="content" style="font-weight: bold;">
+          <p>Width x Aspect Ratio = Section Height</p>
+          <p>Section Height x 2 = Combined Section Height</p>
+          <p>Combined Section Height + Wheel Diameter = Tyre Diameter</p>
+        </div>
+
+        <p>Example: 185/60HR14</p>
+
+        <div class="content">
+          <p>185mm x .60=111mm</p>
+          <p>111mm x 2=222mm</p>
+          <p>222mm + 355.6mm(14")= 577.6mm or 22.74"</p>
+        </div>
+
+        <p>The first number is the width of the tyre in millimeters, measured from sidewall to sidewall. To
+          convert to inches, divide by 25.4 In the example above, the width is 185mm or 7.28".</p>
+
+      </div>
+
+
+      <div class="col-md-12">
+        <p>The second number is the aspect ratio. This is a ratio of sidewall height to width. In the
+          example above, the tyre is 7.28" wide, multiply that by the aspect ratio to find the height
+          of
+          one sidewall. In this case, 185x0.60=111mm or 7.28"x0.60=4.36".
+        </p>
+
+        <p>The last number is the diameter of the wheel in inches.</p>
+
+        <p>To figure the outside diameter of a tyre, take the sidewall height and multiply by
+          2,(remember
+          that the diameter is made up of 2 sidewalls, the one above the wheel, and the one below the
+          wheel) and add the diameter of the wheel to get your answer.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--TYRE UPSIZE CALCULATOR-->
+
+  <section class="container-fluid" id="calculator">
+    <div class="tyre-section">
+      <div class="tyre-title">
+        <h2>Tyre Upsize Calculator</h2>
+        <p>Calculate Your Ideal Tyre Size Upgrade with Our Easy-to-Use Tyre Upsize Calculator!</p>
+      </div>
+      <div class="row align-items-center">
+        <!-- Left Side: Image -->
+        <div class="col-lg-5">
+          <div class="tyre-title">
+            <h2 class="mb-4">Guide to Tyre Sizing</h2>
+          </div>
+          <img src="../assets/calculation.png" alt="Tyre Upsize Calculator" style="width: 100%;">
+        </div>
+
+        <!-- Right Side: Calculator -->
+        <div class="col-lg-7">
+
+          <form name="wheelsizes" action="tyre_bible.html">
+
+
+            <table border=0 align="CENTER">
+              <tbody>
+                <tr>
+                  <th align=CENTER class="upsize-border-left">Current Wheel / Tyre</th>
+                  <th align=CENTER class="upsize-border-right">New Wheel / Tyre</th>
+                </tr>
+                <tr>
+                  <td align=CENTER><select name="section1">
+                      <option value="145">145</option>
+                      <option value="155">155</option>
+                      <option value="165">165</option>
+                      <option value="175">175</option>
+                      <option value="185" selected>185</option>
+                      <option value="195">190</option>
+                      <option value="195">195</option>
+                      <option value="205">205</option>
+                      <option value="215">215</option>
+                      <option value="225">225</option>
+                      <option value="230">230</option>
+                      <option value="235">235</option>
+                      <option value="245">245</option>
+                      <option value="255">255</option>
+                      <option value="265">265</option>
+                      <option value="275">275</option>
+                      <option value="285">285</option>
+                      <option value="295">295</option>
+                      <option value="305">305</option>
+                      <option value="315">315</option>
+                      <option value="325">325</option>
+                      <option value="335">335</option>
+                    </select>
+                    /
+                    <select name="profile1">
+                      <option value="30">30</option>
+                      <option value="35">35</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="50">50</option>
+                      <option value="55">55</option>
+                      <option value="60">60</option>
+                      <option value="65" selected>65</option>
+                      <option value="70">70</option>
+                      <option value="75">75</option>
+                      <option value="80">80</option>
+                      <option value="80">82</option>
+                      <option value="85">85</option>
+                      <option value="100">100</option>
+                    </select>
+                    R
+                    <select name="diameter1">
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14" selected>14</option>
+                      <option value="15">15</option>
+                      <option value="15.5">15.5</option>
+                      <option value="16">16</option>
+                      <option value="16.5">16.5</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="19.5">19.5</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                    </select>
+                  </td>
+
+                  <td align=CENTER>
+                    <select name="section2">
+                      <option value="145">145</option>
+                      <option value="155">155</option>
+                      <option value="165">165</option>
+                      <option value="175">175</option>
+                      <option value="185">185</option>
+                      <option value="195">190</option>
+                      <option value="195">195</option>
+                      <option value="205" selected>205</option>
+                      <option value="215">215</option>
+                      <option value="225">225</option>
+                      <option value="235">235</option>
+                      <option value="245">245</option>
+                      <option value="255">255</option>
+                      <option value="265">265</option>
+                      <option value="275">275</option>
+                      <option value="285">285</option>
+                      <option value="295">295</option>
+                      <option value="305">305</option>
+                      <option value="315">315</option>
+                      <option value="325">325</option>
+                      <option value="335">335</option>
+                    </select>
+                    /
+                    <select name="profile2">
+                      <option value="30">30</option>
+                      <option value="35">35</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="50" selected>50</option>
+                      <option value="55">55</option>
+                      <option value="60">60</option>
+                      <option value="65">65</option>
+                      <option value="70">70</option>
+                      <option value="75">75</option>
+                      <option value="80">80</option>
+                      <option value="80">82</option>
+                      <option value="85">85</option>
+                      <option value="100">100</option>
+                    </select>
+                    R
+                    <select name="diameter2">
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15" selected>15</option>
+                      <option value="16">16</option>
+                      <option value="16.5">16.5</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="19.5">19.5</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align=CENTER>
+                    <input type="button" name="calc1" value="Calculate" class="tyre-button"
+                      onclick="Calculate1(document.wheelsizes.section1.value, document.wheelsizes.profile1.value, document.wheelsizes.diameter1.value)">
+                  </td>
+                  <td align=CENTER>
+                    <input type="button" name="calc2" value="Calculate" class="tyre-button"
+                      onclick="Calculate2(document.wheelsizes.section2.value, document.wheelsizes.profile2.value, document.wheelsizes.diameter2.value)">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align=CENTER>
+                    <img border="0" src="../assets/down-arrow.jpg" width="27" height="27">
+                  </td>
+                  <td align=CENTER>
+                    <img border="0" src="../assets/down-arrow.jpg" width="27" height="30">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align=CENTER>Current RR <input type="text" name="rollingradius1" size=7> mm</td>
+                  <td align=CENTER>New RR <input type="text" name="rollingradius2" size=7> mm</td>
+                </tr>
+                <tr>
+                  <td align=CENTER>Current Circumference <input type="text" name="circumference1" size=7> mm</td>
+                  <td align=CENTER>New Circumference <input type="text" name="circumference2" size=7> mm</td>
+                </tr>
+
+                <tr>
+                  <td colspan=2 align=CENTER class="upsize-top-line">
+                    <img border="0" src="../assets/down-arrow.jpg" width="94" height="39">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan=2 align=CENTER>
+                    <input type="button" name="yo" value="Click to calculate difference" class="tyre-button"
+                      onclick="Difference(document.wheelsizes.circumference1.value, document.wheelsizes.circumference2.value)">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan=2 align=CENTER>
+                    <img border="0" src="../assets/down-arrow.jpg" width="27" height="28">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan=2 align=CENTER>
+                    Difference in circumference <input type="text" name="difference" size=8> mm or <input type="text"
+                      name="differencepercent" size=5> %
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan=2 align=CENTER>
+                    <B>
+                      <font size="4" color="#FF0000">Tyrestore recommends an Upsizing only if the difference if less
+                        than
+                        2%</font>
+                    </b>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan=2 align=CENTER>
+                    So when your speedo reads 70mph, you're actually travelling at <input type="text" name="realspeed"
+                      size=5> mph
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--TYRE-DESIGNATION-->
+  <div class="container-fluid">
+    <div class="tyre-designation">
+      <h2 class="text-center">Conversion Of Ply Rating To Load Range Desigination</h2>
+
+      <table class="table custom-table">
+        <thead>
+          <tr>
+            <th>LOAD RANGE</th>
+            <th>REPLACES PLY RATING</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>E</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>G</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>H</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>J</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>N</td>
+            <td>24</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <!--FOOTER-->
+
+  <footer class="footer">
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <a href="https://globaltrendz.com/" target="_blank">
+        <p class="company">Design Global Trendz</p>
+      </a>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1AUSA9tUin/?mibextid=wwXIfr" target="_blank"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/tyrentyres/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@siremullhirachandstyrestor4496?si=stQT0NvgwjVqGtNX" target="_blank"><i
+            class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="copyrights">&copy; <span id="currentYear"></span> Tyre N Tyres. All rights reserved.</p>
+
+    </div>
+    <div class="disclaimer">
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+    <span class="disclaimer-content"><b>Disclaimer:</b> At Tyre N Tyres Store, we take pride in providing
+      top-quality
+      tyres and expert vehicle care services. Our commitment is to ensure that every product and service we offer
+      meets
+      the highest standards of reliability and performance.
+    </span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const yearElement = document.getElementById('currentYear');
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+
+    window.onscroll = function () {
+      var navbar = document.getElementById("navbar");
+      if (window.pageYOffset > 0) {
+        navbar.classList.add("fixed");
+      } else {
+        navbar.classList.remove("fixed");
+      }
+    };
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".nav-link");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+      navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          if (!$(this).parent().hasClass("dropdown")) {
+            if (navbarCollapse.classList.contains("show")) {
+              const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: true
+              });
+            }
+          }
+        });
+      });
+    });
+
+    function Calculate1(section1, profile1, diameter1) {
+      // Correct the formula for rolling radius
+      let rollingradius1 = Math.round((((diameter1 / 2) * 25.4) + (section1 * (profile1 / 100))) * 100) / 100;
+
+      // Calculate circumference
+      let circumference1 = Math.round((rollingradius1 * 2 * 3.14159) * 100) / 100;
+
+      // Assign values to form fields
+      document.wheelsizes.rollingradius1.value = rollingradius1;
+      document.wheelsizes.circumference1.value = circumference1;
+    }
+
+    function Calculate2(section2, profile2, diameter2) {
+      // Correct the formula for rolling radius
+      let rollingradius2 = Math.round((((diameter2 / 2) * 25.4) + (section2 * (profile2 / 100))) * 100) / 100;
+
+      // Calculate circumference
+      let circumference2 = Math.round((rollingradius2 * 2 * 3.14159) * 100) / 100;
+
+      // Assign values to form fields
+      document.wheelsizes.rollingradius2.value = rollingradius2;
+      document.wheelsizes.circumference2.value = circumference2;
+    }
+
+    function Difference(circumference1, circumference2) {
+      // Calculate the difference in circumference
+      let difference = Math.round((circumference2 - circumference1) * 100) / 100;
+
+      // Calculate the percentage difference
+      let differencepercent = Math.round(((difference / circumference1) * 100) * 100) / 100;
+
+      // Calculate the real speed
+      let realspeed = Math.round((((differencepercent / 100) * 70) + 70) * 100) / 100;
+
+      // Assign values to form fields
+      document.wheelsizes.difference.value = difference;
+      document.wheelsizes.differencepercent.value = differencepercent;
+      document.wheelsizes.realspeed.value = realspeed;
+    }
+  </script>
+
+</body>
+
+</html>

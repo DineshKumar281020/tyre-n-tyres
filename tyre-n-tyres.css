@@ -1,0 +1,3359 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url(assets/Bold-Condensed.otf);
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url(assets/Medium.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 0;
+  line-height: 2;
+}
+
+/*NAVBAR*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.nav {
+  position: relative;
+  height: 109px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  gap: 30px;
+}
+
+.nav-link {
+  color: black;
+  padding: 4px 0;
+}
+
+.nav-link:hover {
+  color: #d40b04;
+}
+
+.dropdown-item:hover {
+  background-color: #d40b04;
+  color: #fff;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.nav-link i {
+  display: inline-block;
+  margin-left: .255em;
+  content: "";
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+}
+
+/*1)What is Tyre?*/
+
+/*TYRE-TYRE*/
+
+.tyre-tyre {
+  padding: 40px 80px;
+}
+
+.tyre-tyre .service-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tyre-tyre .service-title span {
+  color: red;
+}
+
+.tyre-tyre .service-text {
+  line-height: 2;
+  margin-bottom: 5px;
+}
+
+.tyre-tyre .service-paragraph {
+  line-height: 2;
+}
+
+.tyre-tyre .service-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.tyre-tyre .service-icon {
+  text-align: center;
+}
+
+.tyre-tyre .service-icon i {
+  font-size: 2rem;
+  color: red;
+}
+
+.tyre-tyre .service-icon h6 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.tyre-tyre .image-wrapper {
+  position: relative;
+}
+
+.tyre-tyre .image-wrapper img {
+  margin-bottom: 15px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.tyre-tyre .image-overlay {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 8px;
+  width: 75%;
+}
+
+/*TYRE-BORN*/
+
+.tyre-born {
+  padding: 0 80px 40px;
+}
+
+.tyre-born .tire-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tyre-born .tire-text {
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+
+.tyre-born .image-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.tyre-born span {
+  font-weight: bold;
+  color: #d40b04;
+}
+
+.tyre-born .tire-footer {
+  font-weight: bold;
+}
+
+.tyre-born .two-columns {
+  column-count: 2;
+  column-gap: 20px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.tyre-born .two-columns li {
+  margin-bottom: 10px;
+}
+
+/*TYRES-PCD*/
+
+.tyre-pcd {
+  padding: 0 80px 40px;
+}
+
+.tyre-pcd h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-pcd h3 {
+  font-weight: bold;
+}
+
+.tyre-pcd .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tyre-pcd .image-text {
+  text-align: center;
+}
+
+.tyre-pcd .image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tyre-pcd .content-section {
+  margin-bottom: 30px;
+}
+
+.tyre-pcd .pcd-list {
+  margin-top: 5px;
+  line-height: 2;
+}
+
+
+/*TYRES-OFFSET*/
+
+.tyre-offset {
+  padding: 0 80px 40px;
+
+}
+
+.tyre-offset .tyre-image {
+  position: relative;
+}
+
+.tyre-offset h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-offset .tyre-content {
+  line-height: 2;
+}
+
+.tyre-offset .service-details {
+  padding: 20px;
+}
+
+.tyre-offset .service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.tyre-offset .service-card:hover {
+  transform: translateY(-5px);
+}
+
+.tyre-offset h4 {
+  font-weight: bold;
+}
+
+.tyre-offset .content-section {
+  margin-bottom: 30px;
+}
+
+.tyre-offset .offset-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*TYRE-RATED*/
+
+.tyre-rated {
+  padding: 0 80px 40px;
+}
+
+.tyre-rated h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-rated h3 {
+  font-weight: bold;
+}
+
+.tyre-rated h4 {
+  font-weight: bold;
+}
+
+.tyre-rated .content-section {
+  margin-top: 30px;
+}
+
+.tyre-rated .tyre-image img {
+  width: 100%;
+  height: auto;
+}
+
+/*TYRE-ROUND*/
+
+.tyre-round {
+  padding: 0 80px 40px;
+}
+
+.tyre-round .feature-item {
+  align-items: center;
+}
+
+.tyre-round h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #212529;
+}
+
+.tyre-round img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/*2)Function*/
+
+/*TYRE-BASIC*/
+
+.tyre-basic {
+  padding: 40px 80px;
+}
+
+.tyre-basic h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tyre-basic h3 {
+  font-weight: bold;
+}
+
+.tyre-basic .service-details {
+  padding: 20px;
+}
+
+.tyre-basic .service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  min-height: 100%;
+}
+
+.tyre-basic .service-card:hover {
+  transform: translateY(-5px);
+}
+
+.tyre-basic .col-md-4 {
+  margin-top: 30px;
+}
+
+.tyre-basic .offset-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tyre-basic .content-section {
+  margin-top: 20px;
+}
+
+
+/*TYRES-FAIL*/
+
+.tyre-fail {
+  padding: 0 80px 40px;
+}
+
+.tyre-fail h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.tyre-fail .image {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.tyre-fail p {
+  line-height: 2;
+}
+
+.tyre-fail .content-section {
+  margin-bottom: 30px;
+}
+
+.tyre-fail .extra-image img {
+  border-radius: 10px;
+  height: 75%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.tyre-fail .fail-word{
+  line-height: 1.3;
+}
+
+/*TYRES-WORN*/
+
+.tyre-worn {
+  padding: 0 80px 40px;
+}
+
+.tyre-worn h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tyre-worn p {
+  color: #212529;
+  line-height: 2;
+}
+
+.tyre-worn img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.tyre-worn .benefits-list {
+  display: flex;
+  gap: 20px;
+  /* Space between items */
+  padding: 0;
+  list-style-position: inside;
+}
+
+.tyre-worn .benefits-list li {
+  flex: 1;
+  /* Optional: Make items equal width */
+}
+
+.tyre-worn .worn-para {
+  margin-top: 10px;
+}
+
+/*3)Tyre types*/
+
+/*TYRE-RADIAL-PRODUCTION*/
+
+.tyre-radial-production {
+  padding: 40px 80px;
+}
+
+.tyre-radial-production h2 {
+  font-weight: bold;
+}
+
+.tyre-radial-production .service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  min-height: 100%;
+}
+
+.tyre-radial-production .service-card:hover {
+  transform: translateY(-5px);
+}
+
+.tyre-radial-production .service-details {
+  padding: 20px;
+}
+
+.tyre-radial-production .col-md-4 {
+  margin-top: 30px;
+}
+
+.tyre-radial-production .offset-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tyre-radial-production h3 {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.tyre-radial-production .content-section {
+  margin-bottom: 20px;
+}
+
+.tyre-radial-production .content-sections {
+  margin-top: 20px;
+}
+
+.tyre-radial-production .content-sections p {
+  margin: 0;
+}
+
+.tyre-radial-production .content-section p {
+  margin: 0;
+}
+
+.tyre-radial-production .ingredients-image img {
+  border-radius: 10px !important;
+}
+
+.tyre-radial-production .radial-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows wrapping on smaller screens */
+  justify-content: space-between;
+  /* Adjust alignment */
+  padding: 0;
+  gap: 15px;
+  /* Spacing between items */
+}
+
+.tyre-radial-production .radial-list li {
+  padding: 5px 10px;
+
+}
+
+
+/*TYRE-TUBELESS*/
+
+.tyre-tubeless {
+  padding: 0 80px 40px;
+}
+
+.tyre-tubeless h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.tyre-tubeless .columns {
+  column-count: 2;
+  column-gap: 20px;
+}
+
+.tyre-tubeless .content-section {
+  margin-top: 20px;
+}
+
+.tyre-tubeless img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/*TYRE-RADIAL*/
+
+.tyre-radial {
+  padding: 0 80px 40px;
+}
+
+.tyre-radial h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-radial h3 {
+  font-weight: bold;
+}
+
+.tyre-radial img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.tyre-radial .content-section {
+  margin-bottom: 30px;
+}
+
+
+
+/*4)tyre constructions*/
+
+/*TYRE-CONSTRUCTIONS*/
+
+.tyre-constructions {
+  padding: 40px 80px;
+}
+
+.tyre-constructions h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-constructions .service-details {
+  padding: 20px;
+}
+
+.tyre-constructions .service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  min-height: 100%;
+}
+
+.tyre-constructions .service-card:hover {
+  transform: translateY(-5px);
+}
+
+.tyre-constructions .offset-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tyre-constructions .col-md-6 {
+  margin-top: 30px;
+}
+
+/*TYRE-PATTERNS*/
+
+.tyre-patterns {
+  padding: 0 80px 40px;
+}
+
+.tyre-patterns h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-patterns h3 {
+  font-weight: bold;
+}
+
+.tyre-patterns .content-section {
+  margin-bottom: 30px;
+}
+
+.tyre-patterns .image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/*TYRE-COLORED*/
+
+.tyre-colored {
+  padding: 0 80px 40px;
+}
+
+.tyre-colored h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-colored h3 {
+  font-weight: bold;
+}
+
+.tyre-colored .content-section {
+  margin-bottom: 30px;
+}
+
+.tyre-colored img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.tyre-colored .colored-content{
+  margin-top: 5px;
+}
+
+/*5)run flat tyre*/
+
+/*TYRE-RFT*/
+
+.tyre-rft {
+  padding: 40px 80px;
+}
+
+.tyre-rft h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-rft h3 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.tyre-rft ul{
+  padding-left: 17px;
+}
+
+.tyre-rft li {
+  line-height: 1.8;
+}
+
+.tyre-rft .content-section {
+  margin-bottom: 30px;
+}
+
+.tyre-rft .section {
+  margin-top: 15px;
+}
+
+.tyre-rft img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+}
+
+
+/*TYRE-FLAT*/
+
+.tyre-flat {
+  padding: 0 80px 40px;
+}
+
+.tyre-flat h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-flat .service-details {
+  padding: 20px;
+}
+
+.tyre-flat .service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  min-height: 100%;
+}
+
+.tyre-flat .service-card:hover {
+  transform: translateY(-5px);
+}
+
+.tyre-flat .offset-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tyre-flat .col-md-4 {
+  margin-top: 30px;
+}
+
+.tyre-flat li {
+  list-style: none;
+}
+
+/*6)replacement*/
+
+/*TYRE-REPLACEMENT*/
+
+.tyre-replacement {
+  padding: 40px 80px;
+}
+
+.tyre-replacement h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-replacement h3 {
+  font-weight: bold;
+}
+
+.tyre-replacement .content-section {
+  margin-bottom: 30px;
+}
+
+.tyre-replacement .section{
+  margin-top: 10px;
+}
+
+.tyre-replacement img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.tyre-replacement ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.tyre-replacement ol li {
+  flex: 1 1 50%;
+  /* Makes first two items take half width */
+  margin-bottom: 10px;
+  /* Space between rows */
+}
+
+.tyre-replacement ol li:nth-child(3) {
+  flex: 1 1 100%;
+  /* Makes the third item take full width */
+}
+
+.tyre-replacement .replacement-align {
+  text-align: right;
+}
+
+
+
+
+
+/*TYRE-VALVE*/
+
+.tyre-valve {
+  padding: 0 80px 40px;
+}
+
+.tyre-valve h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tyre-valve .content-section {
+  margin-bottom: 30px;
+}
+
+.tyre-valve img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+
+
+/*FOOTER*/
+
+.footer {
+  background-color: #dc3545;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer .social-icons a {
+  text-decoration: none;
+  border-radius: 50%;
+  background: #fff;
+  height: 27px;
+  width: 27px;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+
+}
+
+.footer .social-icons a:hover {
+  color: #000;
+}
+
+.footer .social-icons i {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #dc3545;
+  cursor: pointer;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social-icons i:hover {
+  color: #eb8f98;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.company {
+  margin: 0;
+  padding-left: 40px;
+  color: #fff;
+}
+
+.company:hover {
+  color: #eb8f98;
+}
+
+.copyrights {
+  text-align: left;
+  padding-right: 40px;
+  margin: 0;
+}
+
+.disclaimer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-right: 110px;
+  font-size: 14px;
+}
+
+.disclaimer a {
+  color: #fff;
+}
+
+.disclaimer a:hover {
+  color: #eb8f98;
+}
+
+.disclaimer-content {
+  display: block;
+  /* Treats the span as a block element */
+  text-align: center;
+  /* Centers the text content */
+  margin: 0 auto;
+  /* Centers the block element itself */
+  margin-top: 5px;
+  font-size: 10px;
+  /* Adjust font size as needed */
+  line-height: 1.5;
+  /* Adjust line height for better spacing */
+  width: 80%;
+  /* Optional: Restrict width for better readability */
+}
+
+#contacts iframe {
+  width: 100%;
+  height: 500px;
+}
+
+@media (max-width: 1400px) {
+  #contacts iframe {
+    width: 100%;
+    height: 550px;
+  }
+}
+
+
+/*MEDIA QUERIES*/
+
+/*NAVBAR*/
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    max-height: 300px;
+    /* Adjust height as needed */
+    overflow-y: auto;
+  }
+
+  .dropdown-menu {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .navbar-nav {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-collapse {
+    max-height: 300px;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-collapse {
+    max-height: 300px;
+    
+  }
+}
+
+
+/*1)What is Tyre?*/
+
+/*TYRE-TYRE*/
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+  .tyre-tyre {
+    padding: 30px 60px;
+  }
+
+  .tyre-tyre .service-title {
+    font-size: 1.8rem;
+  }
+
+  .tyre-tyre .service-icons {
+    justify-content: space-between;
+  }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+  .tyre-tyre {
+    padding: 20px 40px;
+  }
+
+  .tyre-tyre .service-title {
+    font-size: 1.6rem;
+  }
+
+  .tyre-tyre .service-icons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .tyre-tyre .service-icon {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .tyre-tyre {
+    padding: 15px 20px;
+  }
+
+  .tyre-tyre .service-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-tyre .service-icons {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .tyre-tyre .service-icon {
+    width: 80%;
+  }
+
+  .tyre-tyre .image-wrapper img {
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+
+  .tyre-tyre .image-overlay {
+    top: 50%;
+    width: 80%;
+  }
+}
+
+/* 576px and below */
+@media (max-width: 576px) {
+  .tyre-tyre {
+    padding: 10px 15px;
+  }
+
+
+
+  .tyre-tyre .service-icons {
+    gap: 15px;
+  }
+
+  .tyre-tyre .service-icon {
+    width: 90%;
+  }
+
+  .tyre-tyre .image-overlay {
+    width: 90%;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .tyre-tyre {
+    padding: 20px 10px;
+  }
+
+  .tyre-tyre .service-title {
+    text-align: center;
+  }
+
+  .tyre-tyre .service-text,
+  .tyre-tyre .service-paragraph {
+    font-size: 1rem;
+  }
+
+  .tyre-tyre .service-icon i {
+    font-size: 1.5rem;
+  }
+
+  .tyre-tyre .image-overlay {
+    width: 100%;
+    border-width: 3px;
+  }
+}
+
+/*TYRE-BORN*/
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+  .tyre-born {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-born .tire-title {
+    font-size: 1.8rem;
+  }
+
+  .tyre-born .two-columns {
+    column-gap: 15px;
+  }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+  .tyre-born {
+    padding: 0 40px 20px;
+  }
+
+  .tyre-born .tire-title {
+    font-size: 1.6rem;
+  }
+
+  .tyre-born .two-columns {
+    column-count: 1;
+    padding-left: 15px;
+  }
+
+  .tyre-born .image-container img {
+    border-radius: 6px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .tyre-born {
+    padding: 0 20px 20px;
+  }
+
+  .tyre-born .tire-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .tyre-born .two-columns {
+    column-count: 1;
+    padding-left: 17px;
+    margin-bottom: 15px;
+  }
+
+  .tyre-born .image-container img {
+    border-radius: 5px;
+  }
+
+  .tyre-born .born-text {
+    margin-top: 15px;
+  }
+}
+
+/* 576px and below */
+@media (max-width: 576px) {
+  .tyre-born {
+    padding: 0 15px 15px;
+  }
+
+  .tyre-born .tire-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-born .tire-text {
+    font-size: 1rem;
+  }
+
+  .tyre-born .two-columns {
+    column-count: 1;
+    padding-left: 18px;
+    margin-bottom: 10px;
+  }
+
+  .tyre-born .image-container img {
+    border-radius: 4px;
+  }
+
+
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .tyre-born {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-born .tire-title {
+    text-align: center;
+  }
+
+  .tyre-born .tire-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .tyre-born .two-columns {
+    column-count: 1;
+    column-gap: 0;
+    margin-bottom: 5px;
+    padding-left: 16px;
+  }
+
+  .tyre-born .image-container img {
+    border-radius: 3px;
+  }
+
+
+}
+
+/*TYRES-PCD*/
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+  .tyre-pcd {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-pcd h2 {
+    font-size: 1.8rem;
+  }
+
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+  .tyre-pcd {
+    padding: 0 40px 20px;
+  }
+
+  .tyre-pcd h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+
+
+  .tyre-pcd .content-section {
+    margin-bottom: 25px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .tyre-pcd {
+    padding: 0 20px 20px;
+  }
+
+  .tyre-pcd h2 {
+    text-align: center;
+  }
+
+  .tyre-pcd h3 {
+    font-size: 22px;
+  }
+
+  .tyre-pcd .image-container {
+    flex-direction: column;
+  }
+
+
+
+  .tyre-pcd .content-section {
+    margin-bottom: 20px;
+  }
+}
+
+/* 576px and below */
+@media (max-width: 576px) {
+  .tyre-pcd {
+    padding: 0 15px 15px;
+  }
+
+  .tyre-pcd h2 {
+    text-align: center;
+  }
+
+  .tyre-pcd .image-container img {
+    object-fit: cover;
+  }
+
+  .tyre-pcd .content-section {
+    margin-bottom: 15px;
+  }
+
+  .tyre-pcd .pcd-text {
+    padding-top: 15px;
+  }
+
+  .content-section:nth-child(even) .rated-text {
+    order: 1;
+  }
+
+  .content-section:nth-child(even) .rated-image {
+    order: 2;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .tyre-pcd {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-pcd h2 {
+    text-align: center;
+  }
+
+  .tyre-pcd .image-container img {
+    border-radius: 5px;
+  }
+
+  .tyre-pcd .content-section {
+    margin-bottom: 10px;
+  }
+
+  .tyre-pcd .pcd-text {
+    padding-top: 10px;
+  }
+}
+
+
+/*TYRES-OFFSET*/
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+  .tyre-offset {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-offset h2 {
+    font-size: 1.8rem;
+  }
+
+
+
+  .tyre-offset .tyre-content {
+    line-height: 1.8;
+  }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+  .tyre-offset {
+    padding: 0 40px 20px;
+  }
+
+  .tyre-offset h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+
+
+  .tyre-offset .content-section {
+    margin-bottom: 25px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .tyre-offset {
+    padding: 0 20px 20px;
+  }
+
+  .tyre-offset h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .tyre-offset h4 {
+    font-size: 20px;
+  }
+
+
+
+  .tyre-offset .tyre-content {
+    line-height: 1.6;
+  }
+
+  .tyre-offset .service-card {
+    height: 100%;
+  }
+
+}
+
+/* 576px and below */
+@media (max-width: 576px) {
+  .tyre-offset {
+    padding: 0 15px 15px;
+  }
+
+  .tyre-offset h2 {
+    text-align: center;
+  }
+
+  .tyre-offset .service-details {
+    padding: 15px;
+  }
+
+  .tyre-offset .content-section {
+    margin-bottom: 20px;
+  }
+
+  .tyre-offset .offset-text {
+    padding-top: 15px;
+  }
+
+  .tyre-offset .service-card {
+    height: 100%;
+  }
+
+  .tyre-offset .service-card {
+    margin-top: 20px;
+    height: auto;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .tyre-offset {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-offset h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .tyre-offset .tyre-content {
+    line-height: 1.5;
+  }
+
+  .tyre-offset .content-section {
+    margin-bottom: 15px;
+  }
+}
+
+/*TYRE-RATED*/
+
+@media (max-width: 1200px) {
+  .tyre-rated {
+    padding: 0 60px 40px;
+  }
+
+  .tyre-rated h2,
+  .tyre-rated h3,
+  .tyre-rated h4 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-rated .split-list {
+    display: flex;
+    justify-content: space-between;
+    /* Places items at both ends */
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+    width: 100%;
+    /* Adjust width as needed */
+    padding: 0;
+    list-style: none;
+    /* Removes default numbering */
+    counter-reset: list-counter;
+  }
+
+  .tyre-rated .split-list li {
+    width: 45%;
+    /* Adjusts the width of each item */
+    text-align: center;
+    /* Centers text */
+    counter-increment: list-counter;
+    position: relative;
+    padding-left: 25px;
+  }
+
+  .tyre-rated .split-list li::before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+  .tyre-rated {
+    padding: 0 40px 30px;
+  }
+
+  .tyre-rated h2,
+  .tyre-rated h3,
+  .tyre-rated h4 {
+    font-size: 1.6rem;
+  }
+
+  .tyre-rated .content-section {
+    margin-top: 25px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .tyre-rated {
+    padding: 0 20px 20px;
+  }
+
+  .tyre-rated h2 {
+    font-size: 24px;
+  }
+
+  .tyre-rated h3 {
+    font-size: 22px;
+  }
+
+  .tyre-rated h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .tyre-rated .content-section {
+    margin-top: 20px;
+  }
+}
+
+/* 576px and below */
+@media (max-width: 576px) {
+  .tyre-rated {
+    padding: 0 15px 15px;
+  }
+
+  .tyre-rated .rated-text {
+    margin-top: 10px;
+  }
+
+  .tyre-rated .content-section {
+    margin-top: 15px;
+  }
+
+  .content-section:nth-child(even) .pcd-text {
+    order: 1;
+  }
+
+  .content-section:nth-child(even) .image-container {
+    order: 2;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .tyre-rated {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-rated h2,
+  .tyre-rated h3,
+  .tyre-rated h4 {
+    text-align: center;
+  }
+
+  .tyre-rated .content-section {
+    margin-top: 10px;
+  }
+
+  .tyre-rated .tyre-image img {
+    border-radius: 5px;
+  }
+}
+
+/*TYRE-ROUND*/
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+  .tyre-round {
+    padding: 0 60px 40px;
+  }
+
+  .tyre-round .feature-item {
+    margin-bottom: 25px;
+  }
+
+  .tyre-round h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+  .tyre-round {
+    padding: 0 40px 30px;
+  }
+
+  .tyre-round img {
+    margin-bottom: 15px;
+  }
+
+  .tyre-round h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .tyre-round {
+    padding: 0 20px 30px;
+  }
+
+  .tyre-round .feature-item {
+    margin-bottom: 20px;
+  }
+
+  .tyre-round h2 {
+    font-size: 24px;
+  }
+
+  .tyre-round img {
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+}
+
+/* 576px and below */
+@media (max-width: 576px) {
+  .tyre-round {
+    padding: 0 15px 20px;
+  }
+
+  .tyre-round img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .tyre-round .round-image {
+    order: -1;
+    /* Moves the image to the top */
+  }
+
+  .tyre-round .round-text {
+    order: 2;
+    /* Moves the text below the image */
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .tyre-round {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-round h2 {
+    margin-bottom: 15px;
+  }
+
+  .tyre-round img {
+    margin-bottom: 8px;
+    border-radius: 3px;
+  }
+
+  .tyre-round .feature-item {
+    margin-bottom: 15px;
+  }
+}
+
+/*2)Function*/
+
+/*TYRE-BASIC*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-basic {
+    padding: 40px 60px;
+  }
+
+  .tyre-basic h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-basic .service-card {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-basic {
+    padding: 30px 40px;
+  }
+
+  .tyre-basic h2 {
+    font-size: 1.6rem;
+  }
+
+  .tyre-basic .service-details {
+    padding: 15px;
+  }
+
+  .tyre-basic .col-md-4 {
+    margin-top: 25px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-basic {
+    padding: 20px 30px;
+  }
+
+  .tyre-basic h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .tyre-basic h4 {
+    font-size: 20px;
+  }
+
+  .tyre-basic .service-details {
+    padding: 15px;
+  }
+
+  .tyre-basic .service-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .tyre-basic .col-md-4 {
+    margin-top: 20px;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-basic {
+    padding: 15px 20px;
+  }
+
+  .tyre-basic h2 {
+    margin-bottom: 10px;
+  }
+
+  .tyre-basic .service-details {
+    padding: 15px;
+  }
+
+  .tyre-basic .col-md-4 {
+    margin-top: 20px;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-basic {
+    padding: 20px 10px;
+  }
+
+  .tyre-basic h2 {
+    margin-bottom: 8px;
+  }
+
+  .tyre-basic .service-details {
+    padding: 15px;
+  }
+
+  .tyre-basic .col-md-4 {
+    margin-top: 20px;
+  }
+}
+
+/*TYRES-FAIL*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-fail {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-fail h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-fail p {
+    font-size: 1rem;
+  }
+
+  .tyre-fail .extra-image img {
+    height: 70%;
+    margin-top: 40px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-fail {
+    padding: 0 40px 20px;
+  }
+
+  .tyre-fail h2 {
+    font-size: 1.6rem;
+  }
+
+  .tyre-fail p {
+    font-size: 1rem;
+  }
+
+  .tyre-fail .extra-image img {
+    height: 65%;
+    margin-top: 30px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-fail {
+    padding: 0 30px 20px;
+  }
+
+  .tyre-fail h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .tyre-fail p {
+    font-size: 1rem;
+    
+  }
+
+  .tyre-fail .extra-image img {
+    height: 60%;
+    margin-top: 20px;
+  }
+
+  .tyre-fail .fail-text {
+    order: 2;
+    padding: 15px;
+  }
+
+  .tyre-fail .fail-image {
+    order: 1;
+  }
+
+  .tyre-fail .content-section {
+    margin-bottom: 0;
+  }
+
+
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-fail {
+    padding: 0 20px 15px;
+  }
+
+  .tyre-fail h2 {
+    margin-bottom: 10px;
+  }
+
+  .tyre-fail p {
+    font-size: 1rem;
+    
+  }
+
+  .tyre-fail .extra-image img {
+    height: 55%;
+    margin-top: 15px;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-fail {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-fail h2 {
+    margin-bottom: 8px;
+  }
+
+  .tyre-fail p {
+    font-size: 1rem;
+    
+  }
+
+  .tyre-fail .extra-image img {
+    height: 50%;
+    margin-top: 10px;
+  }
+}
+
+/*TYRES-WORN*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-worn {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-worn h2 {
+    font-size: 1.8rem;
+  }
+
+  .benefits-list {
+    gap: 15px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-worn {
+    padding: 0 40px 20px;
+  }
+
+  .tyre-worn h2 {
+    font-size: 24px;
+  }
+
+  .benefits-list {
+    flex-wrap: wrap;
+    /* Wrap items on smaller screens */
+    gap: 10px;
+  }
+
+  .benefits-list li {
+    flex: 1 1 calc(50% - 10px);
+    /* Two items per row */
+  }
+
+  .tyre-worn .worn-content {
+    text-align: center;
+    /* Align text centrally for smaller screens */
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-worn {
+    padding: 0 30px 20px;
+  }
+
+  .tyre-worn h2 {
+    font-size: 1.4rem;
+  }
+
+  .benefits-list li {
+    flex: 1 1 100%;
+    /* Single column layout */
+  }
+
+  .tyre-worn .worn-content {
+    text-align: left;
+    /* Align text to the left for smaller screens */
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-worn {
+    padding: 0 20px 15px;
+  }
+
+  .tyre-worn h2 {
+    margin-bottom: 15px;
+  }
+
+  .tyre-worn p {
+    font-size: 1rem;
+  }
+
+  .tyre-worn .benefits-list{
+    margin-top: 10px;
+    gap: 5px;
+  }
+
+  .benefits-list li {
+    flex: 1 1 100% !important;
+  }
+
+  .tyre-worn .worn-content {
+    text-align: center;
+  }
+
+
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-worn {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-worn h2 {
+    margin-bottom: 10px;
+  }
+
+  .tyre-worn p {
+    font-size: 1rem;
+  }
+
+  .benefits-list {
+    gap: 5px;
+  }
+
+  .tyre-worn .worn-content {
+    text-align: center;
+  }
+}
+
+/*3)Tyre types*/
+
+/*TYRE-RADIAL-PRODUCTION*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-radial-production {
+    padding: 30px 60px;
+  }
+
+  .tyre-radial-production h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-radial-production .service-details {
+    padding: 15px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-radial-production {
+    padding: 30px 40px;
+  }
+
+  .tyre-radial-production h2 {
+    font-size: 1.6rem;
+  }
+
+  .tyre-radial-production .col-md-4 {
+    margin-top: 20px;
+  }
+
+  .tyre-radial-production .service-card {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .tyre-radial-production .content-section {
+    margin-bottom: 15px;
+  }
+
+  .tyre-radial-production .content-sections {
+    margin-top: 15px;
+  }
+
+  .tyre-radial-production .radial-list {
+    gap: 0;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-radial-production {
+    padding: 20px 30px;
+  }
+
+  .tyre-radial-production h2 {
+    font-size: 24px;
+  }
+
+  .tyre-radial-production h3 {
+    font-size: 22px;
+  }
+
+  .tyre-radial-production .col-md-4 {
+    margin-top: 20px;
+  }
+
+  .tyre-radial-production .service-details {
+    padding: 15px;
+  }
+
+  .tyre-radial-production .content-section {
+    margin-bottom: 10px;
+  }
+
+  .tyre-radial-production .content-sections {
+    margin-top: 10px;
+  }
+
+
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-radial-production {
+    padding: 15px 20px;
+  }
+
+  .tyre-radial-production h2 {
+    text-align: center;
+  }
+
+  .tyre-radial-production .col-md-4 {
+    margin-top: 20px;
+  }
+
+  .tyre-radial-production .service-details {
+    padding: 15px;
+  }
+
+  .tyre-radial-production .content-section {
+    margin-bottom: 8px;
+  }
+
+  .tyre-radial-production .content-sections {
+    margin-top: 8px;
+  }
+
+  .tyre-radial-production .radial-list {
+    display: block;
+    padding-left: 20px;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-radial-production {
+    padding: 20px 10px;
+  }
+
+  .tyre-radial-production h2 {
+    text-align: center;
+  }
+
+  .tyre-radial-production .service-details {
+    padding: 15px;
+  }
+
+  .tyre-radial-production .content-section {
+    margin-bottom: 5px;
+  }
+
+  .tyre-radial-production .content-sections {
+    margin-top: 5px;
+  }
+
+  .tyre-radial-production .radial-list {
+    padding-left: 35px;
+  }
+}
+
+/*TYRE-TUBELESS*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-tubeless {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-tubeless h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-tubeless .columns {
+    column-gap: 15px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-tubeless {
+    padding: 0 40px 30px;
+  }
+
+  .tyre-tubeless h2 {
+    font-size: 1.6rem;
+  }
+
+  .tyre-tubeless .columns {
+    column-count: 1;
+  }
+
+  .tyre-tubeless .content-section {
+    margin-top: 15px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-tubeless {
+    padding: 0 30px 20px;
+  }
+
+  .tyre-tubeless h2 {
+    font-size: 24px;
+  }
+
+  .tyre-tubeless .columns {
+    column-count: 1;
+  }
+
+  .tyre-tubeless .content-section {
+    margin-top: 10px;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-tubeless {
+    padding: 0 20px 15px;
+  }
+
+  .tyre-tubeless h2 {
+    text-align: center;
+  }
+
+  .tyre-tubeless .columns {
+    column-count: 1;
+  }
+
+  .tyre-tubeless .content-section {
+    margin-top: 8px;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-tubeless {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-tubeless h2 {
+    text-align: center;
+  }
+
+  .tyre-tubeless .columns {
+    column-count: 1;
+  }
+
+  .tyre-tubeless .content-section {
+    margin-top: 5px;
+  }
+}
+
+/*TYRE-RADIAL*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-radial {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-radial h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-radial img {
+    height: 280px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-radial {
+    padding: 0 40px 30px;
+  }
+
+  .tyre-radial h2 {
+    font-size: 1.6rem;
+  }
+
+  .tyre-radial img {
+    height: 260px;
+  }
+
+  .tyre-radial .content-section {
+    margin-bottom: 25px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-radial {
+    padding: 0 30px 20px;
+  }
+
+  .tyre-radial h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-radial h3 {
+    font-size: 22px;
+  }
+
+  .tyre-radial img {
+    height: 240px;
+  }
+
+  .tyre-radial .content-section {
+    margin-bottom: 20px;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-radial {
+    padding: 0 20px 15px;
+  }
+
+  .tyre-radial h2 {
+    text-align: center;
+  }
+
+  .tyre-radial img {
+    height: 220px;
+  }
+
+  .tyre-radial .content-section {
+    margin-bottom: 15px;
+  }
+
+  .tyre-radial .radial-text {
+    order: 2;
+    padding: 15px;
+  }
+
+  .tyre-radial .radial-image {
+    order: 1;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-radial {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-radial h2 {
+    text-align: center;
+  }
+
+  .tyre-radial img {
+    height: 200px;
+  }
+
+  .tyre-radial .content-section {
+    margin-bottom: 10px;
+  }
+}
+
+/*4)tyre constructions*/
+
+/*TYRE-CONSTRUCTIONS*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-constructions {
+    padding: 40px 60px;
+  }
+
+  .tyre-constructions h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-constructions .service-details {
+    padding: 15px;
+  }
+
+  .tyre-constructions .col-md-6 {
+    margin-top: 25px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-constructions {
+    padding: 30px 40px;
+  }
+
+  .tyre-constructions h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .tyre-constructions .service-details {
+    padding: 15px;
+  }
+
+  .tyre-constructions .service-card {
+    min-height: auto;
+  }
+
+  .tyre-constructions .col-md-6 {
+    margin-top: 20px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-constructions {
+    padding: 20px 30px;
+  }
+
+  .tyre-constructions h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-constructions h4 {
+    font-size: 20px;
+
+  }
+
+  .tyre-constructions .service-details {
+    padding: 15px;
+  }
+
+  .tyre-constructions .col-md-6 {
+    margin-top: 20px;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-constructions {
+    padding: 15px 20px;
+  }
+
+  .tyre-constructions h2 {
+
+    text-align: center;
+  }
+
+  .tyre-constructions .service-details {
+    padding: 15px;
+  }
+
+  .tyre-constructions .service-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .tyre-constructions .col-md-6 {
+    margin-top: 20px;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-constructions {
+    padding: 20px 10px;
+  }
+
+  .tyre-constructions h2 {
+
+    text-align: center;
+  }
+
+  .tyre-constructions .service-details {
+    padding: 15px;
+  }
+
+  .tyre-constructions .service-card {
+    box-shadow: none;
+  }
+}
+
+/*TYRE-PATTERNS*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-patterns {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-patterns h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-patterns .image {
+    height: 280px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-patterns {
+    padding: 0 40px 30px;
+  }
+
+  .tyre-patterns h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .tyre-patterns .content-section {
+    margin-bottom: 25px;
+  }
+
+  .tyre-patterns .image {
+    height: 250px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-patterns {
+    padding: 0 30px 20px;
+  }
+
+  .tyre-patterns h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-patterns h3 {
+    font-size: 22px;
+  }
+
+  .tyre-patterns .content-section {
+    margin-bottom: 20px;
+  }
+
+  .tyre-patterns .image {
+    height: 220px;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-patterns {
+    padding: 0 20px 15px;
+  }
+
+  .tyre-patterns h2 {
+    text-align: center;
+  }
+
+  .tyre-patterns .content-section {
+    margin-bottom: 15px;
+  }
+
+  .tyre-patterns .image {
+    height: 200px;
+  }
+
+  .tyre-patterns .patterns-text {
+    order: 2;
+    padding: 15px;
+  }
+
+  .tyre-patterns .patterns-image {
+    order: 1;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-patterns {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-patterns h2 {
+    text-align: center;
+  }
+
+  .tyre-patterns .content-section {
+    margin-bottom: 10px;
+  }
+
+  .tyre-patterns .image {
+    height: 180px;
+  }
+}
+
+/*TYRE-COLORED*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-colored {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-colored h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-colored img {
+    height: 280px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-colored {
+    padding: 0 40px 30px;
+  }
+
+  .tyre-colored h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .tyre-colored .content-section {
+    margin-bottom: 25px;
+  }
+
+  .tyre-colored img {
+    height: 250px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-colored {
+    padding: 0 30px 20px;
+  }
+
+  .tyre-colored h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-colored h3 {
+    font-size: 22px;
+  }
+
+  .tyre-colored .content-section {
+    margin-bottom: 20px;
+  }
+
+  .tyre-colored img {
+    height: 220px;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-colored {
+    padding: 0 20px 15px;
+  }
+
+  .tyre-colored h2 {
+    text-align: center;
+  }
+
+  .tyre-colored .content-section {
+    margin-bottom: 15px;
+  }
+
+  .tyre-colored img {
+    height: 200px;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-colored {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-colored h2 {
+    text-align: center;
+  }
+
+  .tyre-colored .content-section {
+    margin-bottom: 10px;
+  }
+
+  .tyre-colored img {
+    height: 180px;
+  }
+}
+
+/*5)run flat tyre*/
+
+/*TYRE-RFT*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-rft {
+    padding: 30px 60px;
+  }
+
+  .tyre-rft h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-rft img {
+    height: 280px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-rft {
+    padding: 30px 40px;
+  }
+
+  .tyre-rft h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .tyre-rft .content-section {
+    margin-bottom: 25px;
+  }
+
+  .tyre-rft img {
+    height: 250px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-rft {
+    padding: 20px 30px;
+  }
+
+  .tyre-rft h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .tyre-rft .content-section {
+    margin-bottom: 20px;
+  }
+
+  .tyre-rft img {
+    height: 220px;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-rft {
+    padding: 15px 20px;
+  }
+
+  .tyre-rft h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .tyre-rft .content-section {
+    margin-bottom: 15px;
+  }
+
+  .tyre-rft img {
+    height: 200px;
+  }
+
+  .tyre-rft .rft-text {
+    order: 2;
+    /* Text below image */
+    padding: 15px;
+  }
+
+  .tyre-rft .rft-image {
+    order: 1;
+    /* Image on top */
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-rft {
+    padding: 20px 10px;
+  }
+
+  .tyre-rft h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-rft h3 {
+    font-size: 22px;
+  }
+
+  .tyre-rft .content-section {
+    margin-bottom: 10px;
+  }
+
+  .tyre-rft img {
+    height: 180px;
+  }
+}
+
+/*TYRE-FLAT*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-flat {
+    padding: 0 60px 40px;
+  }
+
+  .tyre-flat h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-flat .col-md-4 {
+    margin-top: 25px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-flat {
+    padding: 0 40px 30px;
+  }
+
+  .tyre-flat h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .tyre-flat .col-md-4 {
+    margin-top: 20px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-flat {
+    padding: 0 30px 30px;
+  }
+
+  .tyre-flat h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .tyre-flat .service-details {
+    padding: 15px;
+  }
+
+  .tyre-flat .col-md-4 {
+    margin-top: 20px;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-flat {
+    padding: 0 20px 20px;
+  }
+
+  .tyre-flat h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .tyre-flat .service-details {
+    padding: 15px;
+  }
+
+  .tyre-flat .col-md-4 {
+    margin-top: 20px;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-flat {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-flat h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-flat h4 {
+    font-size: 20px;
+  }
+
+  .tyre-flat .service-details {
+    padding: 15px;
+  }
+
+  .tyre-flat .col-md-4 {
+    margin-top: 20px;
+  }
+}
+
+/*6)replacement*/
+
+/*TYRE-REPLACEMENT*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-replacement {
+    padding: 30px 60px;
+  }
+
+  .tyre-replacement h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-replacement ol li {
+    flex: 1 1 100%;
+    /* Each item takes full width */
+  }
+
+  .tyre-replacement .replacement-align {
+    text-align: left;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-replacement {
+    padding: 30px 40px;
+  }
+
+  .tyre-replacement h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .tyre-replacement img {
+    height: 250px;
+  }
+
+  .tyre-replacement ol {
+    flex-direction: column;
+  }
+
+  .tyre-replacement .replacement-align {
+    text-align: left;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-replacement {
+    padding: 20px 30px;
+  }
+
+  .tyre-replacement h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-replacement h3 {
+    font-size: 22px;
+  }
+
+  .tyre-replacement img {
+    height: 220px;
+  }
+
+  .tyre-replacement ol {
+    flex-direction: column;
+  }
+
+  .tyre-replacement .replacement-align {
+    text-align: left;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-replacement {
+    padding: 15px 20px;
+  }
+
+  .tyre-replacement h2 {
+    text-align: center;
+  }
+
+  .tyre-replacement img {
+    height: 200px;
+  }
+
+  .tyre-replacement ol {
+    flex-direction: column;
+  }
+
+  .tyre-replacement .replacement-align {
+    text-align: left;
+  }
+
+  .tyre-replacement .replacement-text {
+    order: 2;
+    /* Text below image */
+    padding: 15px;
+  }
+
+  .tyre-replacement .replacement-image {
+    order: 1;
+    /* Image on top */
+  }
+
+  .tyre-replacement .content-section {
+    margin-bottom: 10px;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-replacement {
+    padding: 20px 10px;
+  }
+
+  .tyre-replacement h2 {
+    text-align: center;
+  }
+
+  .tyre-replacement img {
+    height: 180px;
+  }
+
+  .tyre-replacement ol {
+    flex-direction: column;
+  }
+
+  .tyre-replacement .replacement-align {
+    text-align: left;
+  }
+
+  
+}
+
+/*TYRE-VALVE*/
+
+/* 1200px and Below */
+@media (max-width: 1200px) {
+  .tyre-valve {
+    padding: 0 60px 30px;
+  }
+
+  .tyre-valve h2 {
+    font-size: 1.8rem;
+  }
+
+  .tyre-valve img {
+    height: 280px;
+  }
+}
+
+/* 992px and Below */
+@media (max-width: 992px) {
+  .tyre-valve {
+    padding: 0 40px 30px;
+  }
+
+  .tyre-valve h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .tyre-valve img {
+    height: 260px;
+  }
+}
+
+/* 768px and Below */
+@media (max-width: 768px) {
+  .tyre-valve {
+    padding: 0 30px 25px;
+  }
+
+  .tyre-valve h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tyre-valve img {
+    height: 240px;
+  }
+}
+
+/* 576px and Below */
+@media (max-width: 576px) {
+  .tyre-valve {
+    padding: 0 20px 20px;
+  }
+
+  .tyre-valve h2 {
+    text-align: center;
+  }
+
+  .tyre-valve img {
+    height: 220px;
+  }
+
+  .tyre-valve .valve-text {
+    order: 2;
+    /* Text below image */
+    padding: 15px;
+  }
+
+  .tyre-valve .valve-image {
+    order: 1;
+    /* Image on top */
+  }
+
+  .tyre-valve .content-section {
+    margin-bottom: 10px;
+  }
+}
+
+/* 480px and Below */
+@media (max-width: 480px) {
+  .tyre-valve {
+    padding: 0 10px 20px;
+  }
+
+  .tyre-valve h2 {
+    text-align: center;
+  }
+
+  .tyre-valve img {
+    height: 200px;
+  }
+}
+
+/*FOOTER*/
+
+/* Up to 1200px */
+@media (max-width: 1200px) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer .social-icons i {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 16px;
+  }
+
+  .company {
+    padding-left: 30px;
+  }
+
+  .copyrights {
+    padding-right: 30px;
+  }
+
+  .footer a {
+    margin-left: 18px;
+  }
+
+  .disclaimer {
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 14px;
+  }
+
+
+}
+
+/* Up to 992px */
+@media (max-width: 992px) {
+  .footer {
+    padding: 25px 0;
+  }
+
+  .footer .social-icons i {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .company,
+  .copyrights,
+  .social-icons {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .company {
+    padding-left: 0;
+  }
+
+  .copyrights {
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .social-icons {
+    padding-left: 0;
+  }
+
+  .footer a {
+    order: 3;
+    margin-left: 15px;
+  }
+
+  .footer:nth-child(even) .company {
+    order: 2;
+    padding-left: 20px;
+  }
+
+  .footer:nth-child(odd) .company {
+    padding-right: 20px;
+  }
+
+  .disclaimer {
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+}
+
+/* Up to 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer .social-icons i {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .company,
+  .copyrights {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .footer a {
+    margin-left: 15px;
+  }
+
+  .disclaimer {
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0px;
+    font-size: 13px;
+  }
+}
+
+/* Up to 576px */
+@media (max-width: 576px) {
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer .social-icons i {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .company,
+  .copyrights,
+  .social-icons {
+    padding: 5px 0;
+  }
+
+  .footer a {
+    margin-left: 10px;
+  }
+
+  .disclaimer {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+    font-size: 12px;
+  }
+}
+
+/* Up to 480px */
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .footer .social-icons i {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .company,
+  .copyrights,
+  .social-icons {
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  .company {
+    padding-left: 0;
+  }
+
+  .copyrights {
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .social-icons {
+    padding-left: 0;
+  }
+
+  .footer a {
+    margin-left: 10px;
+  }
+
+  .disclaimer {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+    font-size: 12px;
+  }
+}

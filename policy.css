@@ -1,0 +1,145 @@
+.privacy-policy{
+    padding: 40px 40px;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h5{
+    font-weight: 600;
+    
+}
+
+a{
+    color: #212529;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: #dc3545;
+}
+
+h1{
+    font-weight: bold;
+}
+
+/*MEDIA-QUERRIES*/
+
+/* Extra Small Devices (480px and below) */
+@media (max-width: 480px) {
+    .privacy-policy {
+      padding: 20px 20px;
+    }
+  
+    h4 {
+      font-size: 16px;
+    }
+  
+    h5 {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    a {
+      font-size: 14px;
+    }
+  }
+  
+  /* Small Devices (576px and below) */
+  @media (max-width: 576px) {
+    .privacy-policy {
+      padding: 30px 30px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  
+    h5 {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    a {
+      font-size: 14px;
+    }
+  }
+  
+  /* Medium Devices (768px and below) */
+  @media (max-width: 768px) {
+    .privacy-policy {
+      padding: 35px 35px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  
+    h5 {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 32px;
+    }
+  
+    a {
+      font-size: 15px;
+    }
+  }
+  
+  /* Large Devices (992px and below) */
+  @media (max-width: 992px) {
+    .privacy-policy {
+      padding: 40px 40px;
+    }
+  
+    h4 {
+      font-size: 20px;
+    }
+  
+    h5 {
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    a {
+      font-size: 16px;
+    }
+  }
+  
+  /* Extra Large Devices (1200px and below) */
+  @media (max-width: 1200px) {
+    .privacy-policy {
+      padding: 40px 40px;
+    }
+  
+    h4 {
+      font-size: 20px;
+    }
+  
+    h5 {
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    a {
+      font-size: 16px;
+    }
+  }
+  
