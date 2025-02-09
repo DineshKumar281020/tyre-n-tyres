@@ -72,6 +72,61 @@ p {
   border-bottom: 0;
 }
 
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+  position: relative;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Change icon to 'X' when navbar is open */
+.navbar-toggler.open .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Ensure navbar items are visible when open */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}
+
 /*1)What is Tyre?*/
 
 /*TYRE-TYRE*/

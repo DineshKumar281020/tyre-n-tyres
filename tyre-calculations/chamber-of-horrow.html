@@ -270,6 +270,23 @@
                 });
             });
         });
+
+        // NAVBAR BUTTON
+    document.addEventListener("DOMContentLoaded", function () {
+  let navbarToggler = document.querySelector(".navbar-toggler");
+  let navbarCollapse = document.querySelector("#navbarSupportedContent");
+
+  navbarToggler.addEventListener("click", function () {
+    this.classList.toggle("open");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
+      navbarCollapse.classList.remove("show");
+      navbarToggler.classList.remove("open");
+    }
+  });
+});
     </script>
 
 </body>

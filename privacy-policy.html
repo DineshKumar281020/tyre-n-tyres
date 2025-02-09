@@ -66,41 +66,70 @@
 
     <div class="nav">
         <nav class="navbar navbar-expand-lg navbar-light">
-
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/logo.jpg" alt="TYRE N TYRES logo"
-                        class="d-inline-block align-text-top"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#calculator">Tyre Upsize Calculator</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#brands">Brands</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact">Contact Us</a>
-                        </li>
-
-                </div>
+    
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/logo.jpg" alt="TYRE N TYRES logo"
+                class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#calculator">Tyre Upsize Calculator</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#brands">Brands</a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Tyre Details <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="what-tyre.html" target="_blank">What is Tyre?</a></li>
+                    <li><a class="dropdown-item" href="function.html" target="_blank">Functions</a></li>
+                    <li><a class="dropdown-item" href="tyre-types.html" target="_blank">Tyre Types</a></li>
+                    <li><a class="dropdown-item" href="tyre-construction.html" target="_blank">Tyre construction</a></li>
+                    <li><a class="dropdown-item" href="run-flat.html" target="_blank">Run Flat Tyre</a></li>
+                    <li><a class="dropdown-item" href="replacement.html" target="_blank">Replacement</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Tyre Calculations  <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="tyre-calculations/calculator.html" target="_blank">Calculator</a></li>
+                    <li><a class="dropdown-item" href="tyre-calculations/plus-sizing.html" target="_blank">Plus Sizing</a></li>
+                    <li><a class="dropdown-item" href="tyre-calculations/how-tyre-conversion.html" target="_blank">How Tyre Conversion?</a></li>
+                    <li><a class="dropdown-item" href="tyre-calculations/aspect-ratio.html" target="_blank">Aspect Ratio</a></li>
+                    <li><a class="dropdown-item" href="tyre-calculations/chamber-of-horrow.html" target="_blank">Chamber Of Horrow</a></li>
+                    <li><a class="dropdown-item" href="tyre-calculations/breaking-distance.html" target="_blank">Breaking Distance</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+    
             </div>
-    </div>
-    </nav>
+          </div>
+      </div>
+      </nav>
 
     <!--PRIVACY POLICY-->
 
@@ -164,8 +193,55 @@
 
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
+    <script>
+
+window.onscroll = function () {
+      var navbar = document.getElementById("navbar");
+      if (window.pageYOffset > 0) {
+        navbar.classList.add("fixed");
+      } else {
+        navbar.classList.remove("fixed");
+      }
+    };
+
+document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".nav-link");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+      navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          if (!$(this).parent().hasClass("dropdown")) {
+            if (navbarCollapse.classList.contains("show")) {
+              const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: true
+              });
+            }
+          }
+        });
+      });
+    });
+
+        // NAVBAR BUTTON
+    document.addEventListener("DOMContentLoaded", function () {
+  let navbarToggler = document.querySelector(".navbar-toggler");
+  let navbarCollapse = document.querySelector("#navbarSupportedContent");
+
+  navbarToggler.addEventListener("click", function () {
+    this.classList.toggle("open");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
+      navbarCollapse.classList.remove("show");
+      navbarToggler.classList.remove("open");
+    }
+  });
+});
+    </script>
 
 
 
