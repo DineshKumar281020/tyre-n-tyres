@@ -686,6 +686,22 @@ th {
     }
   }
 
+  /*CONTENT-ALIGNMENT*/
+
+/* Hide first h3 on 576px and 480px */
+@media (max-width: 576px) {
+  .hide-small {
+      display: none;
+  }
+}
+
+/* Hide second h3 on 1200px, 992px, and 768px */
+@media (min-width: 768px) and (max-width: 2600px) {
+  .hide-large {
+      display: none;
+  }
+}
+
    /*1.CALCULATOR*/
 
     /*TYRE-DIMENSIONS*/
