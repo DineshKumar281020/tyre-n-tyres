@@ -202,7 +202,8 @@ p {
 .tyre-born .tire-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .tyre-born .tire-text {
@@ -274,6 +275,7 @@ p {
 .tyre-pcd .pcd-list {
   margin-top: 5px;
   line-height: 2;
+  padding-left: 15px;
 }
 
 
@@ -1243,6 +1245,7 @@ p {
   .tyre-born .tire-title {
     font-size: 24px;
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .tyre-born .tire-text {
@@ -1357,6 +1360,12 @@ p {
 
   .tyre-pcd h2 {
     text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .tyre-pcd .bolt-pattern-diagram img{
+    height: 100px;
+    width: 100px;
   }
 
   .tyre-pcd .image-container img {
@@ -1418,9 +1427,7 @@ p {
 
 
 
-  .tyre-offset .tyre-content {
-    line-height: 1.8;
-  }
+  
 }
 
 /* 992px and below */
@@ -1456,12 +1463,6 @@ p {
     font-size: 20px;
   }
 
-
-
-  .tyre-offset .tyre-content {
-    line-height: 1.6;
-  }
-
   .tyre-offset .service-card {
     height: 100%;
   }
@@ -1476,6 +1477,7 @@ p {
 
   .tyre-offset h2 {
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .tyre-offset .service-details {
@@ -1511,9 +1513,7 @@ p {
     font-size: 24px;
   }
 
-  .tyre-offset .tyre-content {
-    line-height: 1.5;
-  }
+  
 
   .tyre-offset .content-section {
     margin-bottom: 15px;
@@ -1549,9 +1549,6 @@ p {
 
   .tyre-rated .split-list li {
     width: 45%;
-    /* Adjusts the width of each item */
-    text-align: center;
-    /* Centers text */
     counter-increment: list-counter;
     position: relative;
     padding-left: 25px;
@@ -1635,7 +1632,10 @@ p {
     padding: 0 10px 20px;
   }
 
-  .tyre-rated h2,
+  .tyre-rated h2{
+    text-align: center;
+    margin-bottom: 8px;
+  }
   .tyre-rated h3,
   .tyre-rated h4 {
     text-align: center;
@@ -1731,7 +1731,7 @@ p {
   }
 
   .tyre-round h2 {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 
   .tyre-round img {
@@ -2071,7 +2071,7 @@ p {
   }
 
   .tyre-worn h2 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .tyre-worn p {
@@ -2311,6 +2311,7 @@ p {
 
   .tyre-tubeless h2 {
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .tyre-tubeless .columns {
@@ -2402,7 +2403,7 @@ p {
 
   .tyre-radial .radial-text {
     order: 2;
-    padding: 15px;
+    padding: 15px 15px 0;
   }
 
   .tyre-radial .radial-image {
@@ -2418,6 +2419,7 @@ p {
 
   .tyre-radial h2 {
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .tyre-radial img {
@@ -2508,7 +2510,7 @@ p {
   }
 
   .tyre-constructions h2 {
-
+    margin-bottom: 8px;
     text-align: center;
   }
 
@@ -2614,6 +2616,7 @@ p {
 
   .tyre-patterns h2 {
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .tyre-patterns .content-section {
@@ -2820,6 +2823,7 @@ p {
   .tyre-rft h2 {
     font-size: 1.2rem;
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .tyre-rft .content-section {
@@ -2832,13 +2836,11 @@ p {
 
   .tyre-rft .rft-text {
     order: 2;
-    /* Text below image */
-    padding: 15px;
+    padding: 15px 15px 0;
   }
 
   .tyre-rft .rft-image {
     order: 1;
-    /* Image on top */
   }
 }
 
@@ -2928,6 +2930,7 @@ p {
   .tyre-flat h2 {
     font-size: 1.2rem;
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .tyre-flat .service-details {
@@ -3047,6 +3050,7 @@ p {
 
   .tyre-replacement h2 {
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .tyre-replacement img {
@@ -3159,6 +3163,7 @@ p {
 
   .tyre-valve h2 {
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .tyre-valve img {
@@ -3168,7 +3173,7 @@ p {
   .tyre-valve .valve-text {
     order: 2;
     /* Text below image */
-    padding: 15px;
+    padding: 15px 15px 0;
   }
 
   .tyre-valve .valve-image {
@@ -3289,6 +3294,7 @@ p {
     justify-content: center;
     margin-right: 0;
     font-size: 14px;
+    margin-top: 8px;
   }
 
 }
