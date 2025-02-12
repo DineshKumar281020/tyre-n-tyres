@@ -258,45 +258,45 @@
                     models sometimes have only 4 and pick-up trucks can have as many as 6 or 8.</p>
             </div>
 
-            <div class="row align-items-center content-section">
-                <div class="col-md-3">
-                    <div class="image-container bolt-pattern-diagram">
-                        <img src="details-images/image38.png" alt="4 Hole Pattern">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="service-card">
+                        <img src="details-images/image38.png" alt="Polishing" class="img-fluid offset-image">
+                        <div class="service-details">
+                            <h4 style="font-weight: bold;">4 Hole Pattern</h4>
+                            <p>The bolt circle is the circle determined by the positions of the bolts; the center of
+                                every bolt lies on the circumference of the bolt circle. The important measurement is
+                                the "pitch circle diameter" (PCD), usually expressed in millimeters, although inches are
+                                sometimes used. For a 4- or 6-bolt car, this measurement is merely the distance between
+                                the center of two diametrically opposite bolts. In the 4-bolt picture below, this would
+                                be the distance between holes #1 and #4. Some basic geometry is needed to find the
+                                center of a 5-bolt pattern: draw a line between any two neighboring bolts, and draw a
+                                line from the midpoint of this line to the opposite bolt. Repeat with a different set of
+                                three bolts, and the two long lines will cross in the center, thereby making the
+                                distance between this intersection and the center of a bolt the radius of the bolt
+                                circle.</p>
+                        </div>
                     </div>
-                    <p class="image-text">4 Hole Pattern</p>
                 </div>
-
-
-                <div class="col-md-6">
-                    <p>The bolt circle is the circle determined by the positions of the bolts; the center of every bolt
-                        lies on the circumference of the bolt circle.</p>
-                    <p>The important measurement is the "pitch circle diameter" (PCD), usually expressed in millimeters,
-                        although inches are sometimes used. For a 4- or 6-bolt car, this measurement is merely the
-                        distance between the center of two diametrically opposite bolts. In the 4-bolt picture below,
-                        this would be the distance between holes #1 and #4. Some basic geometry is needed to find the
-                        center of a 5-bolt pattern: draw a line between any two neighboring bolts, and draw a line from
-                        the midpoint of this line to the opposite bolt. Repeat with a different set of three bolts, and
-                        the two long lines will cross in the center, thereby making the distance between this
-                        intersection and the center of a bolt the radius of the bolt circle.</p>
-                    <p>The PCD can be calculated for any wheel from the number of bolts (n) and the measured center
-                        distance between two adjacent bolts (d) as; PCD = d / SIN(π/n).</p>
-                    <p>A 1974 MG B is a 4/4.5" (4/114.3) car, meaning it is, again, a 4-bolt pattern with a 4.5" or
-                        114.3 mm bolt circle.</p>
-                    <p>The most common PCD values are 100 mm and 114.3 mm. This difference arises from the
-                        manufacturers' measurement convention - whether they are designing around metric values (100 mm)
-                        or imperial values (4.5 inches, i.e. 114.3 mm).</p>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="image-container bolt-pattern-diagram">
-                        <img src="details-images/image24.png" alt="5 Hole Pattern">
+                <div class="col-md-6 text-center">
+                    <div class="service-card">
+                        <img src="details-images/image24.png" alt="Engine Repair" class="img-fluid offset-image">
+                        <div class="service-details">
+                            <h4 style="font-weight: bold;">5 Hole Pattern</h4>
+                            <p>The PCD can be calculated for any wheel from the number of bolts (n) and the measured
+                                center distance between two adjacent bolts (d) as; PCD = d / SIN(π/n). A 1974 MG B is a 4/4.5" (4/114.3) car, meaning it is, again, a 4-bolt pattern with a
+                                4.5" or 114.3 mm bolt circle. The most common PCD values are 100 mm and 114.3 mm. This difference arises from the
+                                manufacturers' measurement convention - whether they are designing around metric values
+                                (100 mm) or imperial values (4.5 inches, i.e. 114.3 mm).
+                            </p>
+                        </div>
                     </div>
-                    <p class="image-text">5 Hole Pattern</p>
                 </div>
             </div>
 
             <div class="row align-items-center content-section">
                 <h3>Lug nuts or bolts</h3>
+                <img src="details-images/image93.jpg" alt="Mechanic working on a car" class="hide-large">
                 <div class="col-md-12">
                     <p>Another thing to consider when new wheels are purchased is proper lug nuts or bolts. They are
                         usually either flat, tapered (generally at 90degrees), or ball seats, meaning the mounting
@@ -328,14 +328,14 @@
 
                 <div class="col-md-6">
                     <div class="image-container">
-                        <img src="details-images/image93.jpg" alt="Mechanic working on a car">
+                        <img src="details-images/image93.jpg" alt="Mechanic working on a car" class="hide-small">
                     </div>
                 </div>
             </div>
 
             <div class="row align-items-center content-section">
 
-               <h3 class="hide-large">Offset</h3>
+                <h3 class="hide-large">Offset</h3>
                 <div class="col-md-6">
                     <div class="image-container">
                         <img src="details-images/image94.jpg" alt="Mechanic working on a car">
@@ -583,7 +583,7 @@
             <h2 class="text-center">Tyres – Round Black And A Lot More</h2>
             <div class="row align-items-center">
                 <div class="col-md-6 round-text">
-                    
+
                     <div class="feature-item d-flex mb-2">
 
                         <div class="ms-3">
@@ -711,21 +711,21 @@
         });
 
         // NAVBAR BUTTON
-    document.addEventListener("DOMContentLoaded", function () {
-  let navbarToggler = document.querySelector(".navbar-toggler");
-  let navbarCollapse = document.querySelector("#navbarSupportedContent");
+        document.addEventListener("DOMContentLoaded", function () {
+            let navbarToggler = document.querySelector(".navbar-toggler");
+            let navbarCollapse = document.querySelector("#navbarSupportedContent");
 
-  navbarToggler.addEventListener("click", function () {
-    this.classList.toggle("open");
-  });
+            navbarToggler.addEventListener("click", function () {
+                this.classList.toggle("open");
+            });
 
-  document.addEventListener("click", function (event) {
-    if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
-      navbarCollapse.classList.remove("show");
-      navbarToggler.classList.remove("open");
-    }
-  });
-});
+            document.addEventListener("click", function (event) {
+                if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
+                    navbarCollapse.classList.remove("show");
+                    navbarToggler.classList.remove("open");
+                }
+            });
+        });
     </script>
 </body>
 
