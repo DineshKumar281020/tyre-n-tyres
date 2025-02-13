@@ -1255,7 +1255,7 @@ th {
   }
   .tyre-conversion h2 {
     font-size: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
   .tyre-conversion img {
     height: 200px;
@@ -1429,6 +1429,9 @@ th {
   .tyre-damage ul{
     margin-top: 10px;
     padding-left: 1rem;
+  }
+  .tyre-damage .damage-content{
+    margin-top: 10px;
   }
 }
 

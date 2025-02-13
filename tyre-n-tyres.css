@@ -1351,12 +1351,6 @@ p {
   .tyre-pcd h2 {
     font-size: 1.8rem;
   }
-
-  .tyre-pcd .service-details {
-    padding: 15px;
-  }
-  
-
 }
 
 /* 992px and below */
@@ -1369,11 +1363,6 @@ p {
     font-size: 24px;
     text-align: center;
   }
-
-  .tyre-pcd .service-details {
-    padding: 15px;
-  }
-  
 
   .tyre-pcd .content-section {
     margin-bottom: 25px;
@@ -1397,11 +1386,6 @@ p {
   .tyre-pcd .image-container {
     flex-direction: column;
   }
-
-  .tyre-pcd .service-details {
-    padding: 15px;
-  }
-  
 
   .tyre-pcd .content-section {
     margin-bottom: 20px;
@@ -1447,10 +1431,6 @@ p {
   .content-section:nth-child(even) .rated-image {
     order: 2;
   }
-
-  .tyre-pcd .service-details {
-    padding: 15px;
-  }
   
 }
 
@@ -1469,17 +1449,12 @@ p {
   }
 
   .tyre-pcd .content-section {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .tyre-pcd .pcd-text {
     padding-top: 10px;
   }
-
-  .tyre-pcd .service-details {
-    padding: 15px;
-  }
-  
 }
 
 
@@ -1961,7 +1936,10 @@ p {
 
   .tyre-fail p {
     font-size: 1rem;
-    
+  }
+
+  .tyre-fail .fail-sentence{
+    margin-bottom: 10px;
   }
 
   .tyre-fail .extra-image img {
@@ -1981,7 +1959,6 @@ p {
   .tyre-fail .content-section {
     margin-bottom: 0;
   }
-
 
 }
 
@@ -2003,6 +1980,10 @@ p {
   .tyre-fail .extra-image img {
     height: 55%;
     margin-top: 15px;
+  }
+
+  .tyre-fail .fail-extra{
+    margin-bottom: 10px;
   }
 }
 
@@ -2107,7 +2088,7 @@ p {
   }
 
   .tyre-worn .benefits-list{
-    margin-top: 10px;
+    margin: 10px 10px 0;
     gap: 5px;
   }
 
@@ -2117,6 +2098,10 @@ p {
 
   .tyre-worn .worn-content {
     text-align: center;
+  }
+
+  .tyre-worn .content-section{
+    margin-bottom: 15px;
   }
 
 
