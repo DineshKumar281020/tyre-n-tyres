@@ -297,7 +297,7 @@ p {
   transform: translateY(-5px);
 }
 
-.tyre-pcd .col-md-6 {
+.tyre-pcd .pcd-box {
   margin-bottom: 20px;
 }
 
@@ -1355,9 +1355,7 @@ p {
   .tyre-pcd .service-details {
     padding: 15px;
   }
-  .tyre-pcd .col-md-6 {
-    margin-bottom: 20px;
-  }
+  
 
 }
 
@@ -1375,9 +1373,7 @@ p {
   .tyre-pcd .service-details {
     padding: 15px;
   }
-  .tyre-pcd .col-md-6 {
-    width: 100%;
-  }
+  
 
   .tyre-pcd .content-section {
     margin-bottom: 25px;
@@ -1405,12 +1401,13 @@ p {
   .tyre-pcd .service-details {
     padding: 15px;
   }
-  .tyre-pcd .col-md-6 {
-    width: 100%;
+  
+
+  .tyre-pcd .content-section {
     margin-bottom: 20px;
   }
 
-  .tyre-pcd .content-section {
+  .tyre-pcd .pcd-box{
     margin-bottom: 20px;
   }
 }
@@ -1454,10 +1451,7 @@ p {
   .tyre-pcd .service-details {
     padding: 15px;
   }
-  .tyre-pcd .col-md-6 {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+  
 }
 
 /* 480px and below */
@@ -1485,10 +1479,7 @@ p {
   .tyre-pcd .service-details {
     padding: 15px;
   }
-  .tyre-pcd .col-md-6 {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+  
 }
 
 
@@ -1737,10 +1728,6 @@ p {
     padding: 0 60px 40px;
   }
 
-  .tyre-round .feature-item {
-    margin-bottom: 25px;
-  }
-
   .tyre-round h2 {
     font-size: 1.8rem;
   }
@@ -1765,10 +1752,6 @@ p {
 @media (max-width: 768px) {
   .tyre-round {
     padding: 0 20px 30px;
-  }
-
-  .tyre-round .feature-item {
-    margin-bottom: 20px;
   }
 
   .tyre-round h2 {
@@ -1816,10 +1799,6 @@ p {
   .tyre-round img {
     margin-bottom: 8px;
     border-radius: 3px;
-  }
-
-  .tyre-round .feature-item {
-    margin-bottom: 15px;
   }
 }
 
