@@ -127,8 +127,25 @@
       transition: all 0.3s ease-in-out;
     }
 
+    /*1)TYRE-TERMINOLOGY*/
 
-    /*TYRE-BALANCING*/
+     .tyre-terminology{
+      padding: 40px 80px;
+     }
+
+     .tyre-terminology h2{
+      font-weight: bold;
+      margin-bottom: 20px;
+     }
+
+     .tyre-terminology img{
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /*2)TYRE-BALANCING*/
 
     .tyre-balancing{
       padding: 40px 80px;
@@ -158,6 +175,33 @@
       padding-left: 1rem;
     }
 
+    /*4)TYRE-REFERENCE*/
+
+    .tyre-reference .service-details {
+      padding: 20px;
+    }
+    
+    .tyre-reference .service-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      min-height: 100%;
+    }
+    
+    .tyre-reference .service-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .tyre-reference .offset-image {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    
+    .tyre-reference .col-md-4 {
+      margin-top: 30px;
+    }
 
     /*FOOTER*/
 
@@ -327,6 +371,69 @@
 @media (min-width: 768px) and (max-width: 2600px) {
   .hide-large {
       display: none;
+  }
+}
+
+/*1)TYRE-TERMINOLOGY*/
+
+/* Large screens (1200px and below) */
+@media (max-width: 1200px) {
+  .tyre-terminology {
+    padding: 40px 60px;
+  }
+}
+
+/* Medium-large screens (992px - 1199px) */
+@media (max-width: 992px) {
+  .tyre-terminology {
+    padding: 30px 50px;
+  }
+  .tyre-terminology img {
+    height: 320px;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 768px) {
+  .tyre-terminology {
+    padding: 20px 40px;
+  }
+  .tyre-terminology img {
+    height: 280px;
+  }
+  .tyre-terminology h2{
+    margin-bottom: 8px;
+  }
+}
+
+/* Small devices (576px - 767px) */
+@media (max-width: 576px) {
+  .tyre-terminology {
+    padding: 15px 20px;
+  }
+  .tyre-terminology img {
+    height: 250px;
+  }
+  .tyre-terminology .col-md-12 p{
+    margin-bottom: 5px;
+  }
+  .tyre-terminology .terminology-text {
+    order: 2; 
+    padding: 15px 15px 0;
+  }
+
+  .tyre-terminology .terminology-image {
+    order: 1; 
+  }
+}
+
+/* Extra small devices (up to 480px) */
+@media (max-width: 480px) {
+  .tyre-terminology {
+    padding: 20px 10px;
+  }
+  .tyre-terminology img {
+    height: 220px;
   }
 }
 
