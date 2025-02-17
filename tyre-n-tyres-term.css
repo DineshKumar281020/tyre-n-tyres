@@ -202,7 +202,7 @@ p {
 }
 
 .tyre-alignment .tyre-table {
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -219,7 +219,6 @@ p {
 }
 
 .tyre-alignment .list-row {
-  /* list-style: disc;  */
   display: flex;
   gap: 10rem; /* Adjust spacing between items */
   padding-left: 20px; /* Ensure bullets are positioned properly */
@@ -229,56 +228,33 @@ p {
   display: list-item; /* Ensures bullets are shown */
 }
 
- .tyre-alignment ol {
-  text-align: left;
-}
-
-/*.tyre-alignment .replacement-align{
-  text-align: right;
-}
-
-.tyre-alignment ol li {
-  flex: 1 1 50%;
-  margin-bottom: 10px;
-  
-}
-
-.tyre-alignment ol li:nth-child(3) {
-  flex: 1 1 100%;
-  
-} */
-
 .tyre-alignment .alignment{
   padding-left: 1rem;
 }
 
-.tyre-alignment .service-details {
-  padding: 20px;
+.tyre-alignment .align {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-position: inside;
+  padding: 0;
 }
 
-.tyre-alignment .service-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  min-height: 100%;
+.tyre-alignment .align li {
+  flex: 1 1 50%;
+  /* Makes first two items take half width */
+  margin-bottom: 10px;
+  /* Space between rows */
 }
 
-.tyre-alignment .service-card:hover {
-  transform: translateY(-5px);
+.tyre-alignment .align li:nth-child(3) {
+  flex: 1 1 100%;
+  /* Makes the third item take full width */
 }
 
-.tyre-alignment .offset-image {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+.tyre-alignment .replacement-align {
+  text-align: right;
 }
 
-.tyre-alignment .col-md-4 {
-  margin-top: 30px;
-}
 
 /*4)TYRE-REFERENCE*/
 
@@ -647,9 +623,7 @@ p {
   .tyre-alignment .list-row {
     gap: 8rem;
   }
-  .tyre-alignment .col-md-4 {
-    margin-top: 25px;
-  }
+  
 }
 
 /* Large Screens (992px and above) */
@@ -669,9 +643,7 @@ p {
   .tyre-alignment .replacement-align{
     text-align: justify;
   }
-  .tyre-alignment .col-md-4 {
-    margin-top: 25px;
-  }
+  
 }
 
 /* Medium Screens (768px and above) */
@@ -692,12 +664,7 @@ p {
   .tyre-alignment .tyre-table {
     width: 100%;
   }
-  .tyre-alignment .col-md-4 {
-    margin-top: 20px;
-  }
-  .tyre-alignment .service-details {
-    padding: 15px;
-  }
+  
 }
 
 /* Small Screens (576px and above) */
@@ -722,9 +689,7 @@ p {
   .tyre-alignment .content-section{
     margin-top: 10px;
   }
-  .tyre-alignment .col-md-4 {
-    margin-top: 20px;
-  }
+  
 }
 
 /* Extra Small Screens (480px and below) */
@@ -742,9 +707,7 @@ p {
     padding: 5px;
     font-size: 14px;
   }
-  .tyre-alignment .col-md-4 {
-    margin-top: 20px;
-  }
+  
 }
 
 /*4)TYRE-REFERENCE*/
