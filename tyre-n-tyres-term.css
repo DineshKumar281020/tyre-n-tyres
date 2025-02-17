@@ -204,7 +204,6 @@ p {
 .tyre-alignment .tyre-table {
   margin: 20px auto;
   width: 90%;
-  max-width: 800px;
   border-collapse: collapse;
 }
 
