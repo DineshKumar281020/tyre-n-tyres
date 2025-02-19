@@ -1,69 +1,82 @@
  /*BANNER*/
 
  .about-banner {
-    background-image: url('images/banner-content-1.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    position: relative;
-  }
-  
-  .about-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adds dark overlay */
-  }
-  
-  .about-banner .container {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .about-banner h1 {
-    font-size: 48px;
-    font-weight: 700;
-  }
-  
-  .about-banner p {
-    font-size: 18px;
-    font-weight: 300;
-  }
+   background-image: url('images/banner-content-1.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 300px;
+   position: relative;
+ }
 
-  /*BLOG IMAGE AND SIDE SCROLLING*/
+ .about-banner::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   /* Adds dark overlay */
+ }
 
-  .blog-section {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-}
+ .about-banner .container {
+   position: relative;
+   z-index: 1;
+ }
 
-.blog-image {
-    width: 65%;
-}
+ .about-banner h1 {
+   font-size: 48px;
+   font-weight: 700;
+ }
 
-.blog-image img {
-    width: 100%;
-    border-radius: 8px;
-}
+ .about-banner p {
+   font-size: 18px;
+   font-weight: 300;
+ }
 
-.sticky-top {
-  position: -webkit-sticky;
+ /*BLOG IMAGE*/
+
+ .blog-section {
+   display: flex;
+   gap: 20px;
+   padding: 20px;
+ }
+
+ .blog-section .blog-image {
+   width: 65%;
+ }
+
+ .blog-section .blog-image img {
+   width: 100%;
+   border-radius: 8px;
+ }
+
+ .blog-section h2{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+ }
+
+ .sidebar {
+  height: 100vh; /* Full height */
   position: sticky;
-  top: 20px; 
-  z-index: 1000;
-  width: 100%;
-  max-width: 300px; 
+  top: 0;
+  color: #000;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
 }
 
 .service-btn-card {
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+    top: 10px; /* Adjust based on your layout */
+    z-index: 1000; /* Ensures it stays above other elements */
+    background: white; /* Optional: Prevents transparency issues */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
 }
 
 .service-btn-card ul {
@@ -79,7 +92,7 @@
 .service-btn {
   display: block;
   padding: 10px 15px;
-  background: #007bff;
+  background: #dc3545;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -89,104 +102,111 @@
 
 .service-btn:hover,
 .service-btn.active {
-  background: #0056b3;
+  background: #eb8f98;
 }
 
-.sidebar-widget {
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-}
+ /*TYRE-WEAR*/
 
-.sidebar-widget img {
+ .tyre-wear{
+  padding: 40px 80px;
+ }
+
+ .tyre-wear h2{
+  margin-bottom: 20px;
+  font-weight: bold;
+ }
+
+ .tyre-wear h3{
+  font-weight: bold;
+ }
+
+ .tyre-wear .content-section{
+  margin-top: 30px;
+ }
+
+ .tyre-wear img{
   width: 100%;
-  max-width: 150px;
-  border-radius: 5px;
-}
-
-.contact-info h5 {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #333;
-}
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+ }
 
 
-   /*MEDIA QUERIES*/
+ /*MEDIA QUERIES*/
 
-   /*BANNER*/
+ /*BANNER*/
 
-/* For screens larger than 1200px */
-@media (max-width: 1200px) {
-    .about-banner {
-      height: 280px;
-    }
-  
-    .about-banner h1 {
-      font-size: 42px;
-    }
-  
-    .about-banner p {
-      font-size: 16px;
-    }
-  }
-  
-  /* For screens between 992px and 1200px */
-  @media (max-width: 992px) {
-    .about-banner {
-      height: 250px;
-    }
-  
-    .about-banner h1 {
-      font-size: 38px;
-    }
-  
-    .about-banner p {
-      font-size: 15px;
-    }
-  }
-  
-  /* For screens between 768px and 992px */
-  @media (max-width: 768px) {
-    .about-banner {
-      height: 220px;
-    }
-  
-    .about-banner h1 {
-      font-size: 34px;
-    }
-  
-    .about-banner p {
-      font-size: 14px;
-    }
-  }
-  
-  /* For screens between 576px and 768px */
-  @media (max-width: 576px) {
-    .about-banner {
-      height: 200px;
-    }
-  
-    .about-banner h1 {
-      font-size: 30px;
-    }
-  
-    .about-banner p {
-      font-size: 13px;
-    }
-  }
-  
-  /* For screens 480px and below */
-  @media (max-width: 480px) {
-    .about-banner {
-      height: 180px;
-    }
-  
-    .about-banner h1 {
-      font-size: 26px;
-    }
-  
-    .about-banner p {
-      font-size: 12px;
-    }
-  }
+ /* For screens larger than 1200px */
+ @media (max-width: 1200px) {
+   .about-banner {
+     height: 280px;
+   }
+
+   .about-banner h1 {
+     font-size: 42px;
+   }
+
+   .about-banner p {
+     font-size: 16px;
+   }
+ }
+
+ /* For screens between 992px and 1200px */
+ @media (max-width: 992px) {
+   .about-banner {
+     height: 250px;
+   }
+
+   .about-banner h1 {
+     font-size: 38px;
+   }
+
+   .about-banner p {
+     font-size: 15px;
+   }
+ }
+
+ /* For screens between 768px and 992px */
+ @media (max-width: 768px) {
+   .about-banner {
+     height: 220px;
+   }
+
+   .about-banner h1 {
+     font-size: 34px;
+   }
+
+   .about-banner p {
+     font-size: 14px;
+   }
+ }
+
+ /* For screens between 576px and 768px */
+ @media (max-width: 576px) {
+   .about-banner {
+     height: 200px;
+   }
+
+   .about-banner h1 {
+     font-size: 30px;
+   }
+
+   .about-banner p {
+     font-size: 13px;
+   }
+ }
+
+ /* For screens 480px and below */
+ @media (max-width: 480px) {
+   .about-banner {
+     height: 180px;
+   }
+
+   .about-banner h1 {
+     font-size: 26px;
+   }
+
+   .about-banner p {
+     font-size: 12px;
+   }
+ }
