@@ -249,7 +249,7 @@ body{
   background-color: #fff;
   height: 100%;
 }
-.service-card:hover {
+.services-section .service-card:hover {
   transform: translateY(-10px);
 }
 .service-card img {
@@ -411,7 +411,7 @@ th {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  min-height: 100%;
+  height: 100%;
 }
 
 .blog-tyre .offset-image {
@@ -1246,7 +1246,72 @@ th {
 }
 
 /*BLOGS*/
+@media (max-width: 1200px) {
 
+  .blog-tyre{
+    padding: 0 25px 35px;
+  }
+  
+  .blog-tyre h2{
+    font-size: 36px;
+  }
+
+  .blog-tyre p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .blog-tyre{
+    padding: 0 20px 30px;
+  }
+
+  .blog-tyre h2{
+    font-size: 32px;
+  }
+
+  .blog-tyre p{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .blog-tyre{
+    padding: 0 15px 25px;
+  }
+
+  .blog-tyre h2{
+    font-size: 28px;
+  }
+
+  .blog-tyre p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .blog-tyre{
+    padding: 0 10px 20px;
+  }
+
+  .blog-tyre h2{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .blog-tyre{
+    padding: 0 20px 20px;
+  }
+  
+  .blog-tyre h2{
+    font-size: 20px;
+  }
+}
 
 
 /*BRANDS*/
