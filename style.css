@@ -390,6 +390,45 @@ th {
   font-size: 14px; 
 }
 
+/*BLOGS*/
+
+
+.blogs {
+  padding: 0 0 40px;
+}
+
+.blogs .blog-title {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blogs h3{
+  font-weight: bold;
+}
+
+.blogs .blog-content {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.blogs .read-more {
+  color: #dc3545;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.blogs .read-more:hover {
+  text-decoration: underline;
+}
+
+.blogs .image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 /*BRANDS*/
 
 .brands-section {
