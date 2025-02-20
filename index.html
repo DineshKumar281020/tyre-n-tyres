@@ -559,27 +559,115 @@
 
   <!--BLOGS-->
 
-  <div class="container">
-    <div class="blogs">
-      <h2 class="blog-title">Blogs</h2>
-      <p class="blog-subtitle">Discover expert tyre tips, maintenance guides, and the latest trends to keep your ride safe and smooth.</p>
+  <div class="blog-tyre">
+    <h2 class="text-center">Blogs</h2>
+    <p>A blog is an online platform where individuals or businesses share content, insights, or updates on various
+      topics. It helps engage audiences, improve SEO, and establish expertise in a field. Blogs can be personal,
+      professional, or business-oriented, covering diverse subjects like travel, tech, or lifestyle.</p>
+    <div class="owl-carousel owl-theme blog-carousel">
 
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h3>Driving with Confidence: The Crucial Role of Routine Car Maintenance</h3>
-          <img src="assets/image1.jpg" alt="Car Maintenance" class="img-fluid hide-large">
-          <p class="blog-content">
-            Your car is more than just a means of getting from point A to point B; it's a reliable companion on your
-            daily journey.
-            Just like any dependable friend, your car requires regular care to ensure it remains in peak condition,
-            providing safety and performance...
-          </p>
-          <a href="blogs/blogs.html" class="read-more" target="_blank">READ MORE</a>
+      <div class="item">
+
+        <div class="service-card">
+          <img src="assets/blog1.jpg" alt="Engine Repair" class="img-fluid offset-image">
+          <div class="service-details">
+            <h4 style="font-weight: bold;">How do you find out tyre life?</h4>
+            <p>Tyre life can be determined by checking tread depth, wear patterns, and overall
+              condition. Regular inspections, proper inflation, and alignment help extend tyre
+              longevity.
+            </p>
+          </div>
         </div>
-        <div class="col-md-6 image-container">
-          <img src="assets/image1.jpg" alt="Car Maintenance" class="img-fluid hide-small">
-        </div>
+
       </div>
+
+      <div class="item">
+
+        <div class="service-card">
+          <img src="assets/blog2.jpg" alt="Inspection" class="img-fluid offset-image">
+          <div class="service-details">
+            <h4 style="font-weight: bold;">Handling complaint & Handling ride disturbances </h4>
+            <p>We address customer complaints promptly and professionally, ensuring a swift resolution
+              to enhance rider satisfaction.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="item">
+
+        <div class="service-card">
+          <img src="assets/blog3.jpg" alt="Engine Repair" class="img-fluid offset-image">
+          <div class="service-details">
+            <h4 style="font-weight: bold;">Tyre fitment safety precautions</h4>
+            <p>Ensure proper tyre pressure and alignment before installation to prevent uneven wear and
+              potential blowouts. Always use the correct tools and follow manufacturer guidelines for
+              a secure and safe fitment.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="item">
+
+        <div class="service-card">
+          <img src="assets/blog4.jpg" alt="Engine Repair" class="img-fluid offset-image">
+          <div class="service-details">
+            <h4 style="font-weight: bold;">SUV</h4>
+            <p>An SUV (Sports Utility Vehicle) is a versatile vehicle designed for both on-road and
+              off-road driving, offering spacious interiors and a higher ground clearance.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="item">
+
+        <div class="service-card">
+          <img src="assets/blog5.jpg" alt="Inspection" class="img-fluid offset-image">
+          <div class="service-details">
+            <h4 style="font-weight: bold;">Rapid air loss </h4>
+            <p>Rapid air loss refers to the sudden and significant deflation of a tire, often caused by
+              punctures, valve failures, or structural damage. This can lead to reduced vehicle
+              control.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="item">
+
+        <div class="service-card">
+          <img src="assets/blog6.jpg" alt="Engine Repair" class="img-fluid offset-image">
+          <div class="service-details">
+            <h4 style="font-weight: bold;">Radial tyre production </h4>
+            <p>Radial tyre production involves advanced manufacturing techniques where steel belts are
+              placed at a 90-degree angle to the tread, providing durability, fuel efficiency, and a
+              smoother ride.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="item">
+
+        <div class="service-card">
+          <img src="assets/blog7.jpg" alt="Engine Repair" class="img-fluid offset-image">
+          <div class="service-details">
+            <h4 style="font-weight: bold;">Procedure to repair tubeless tyres</h4>
+            <p>The procedure to repair tubeless tires involves locating the puncture, removing any
+              debris, and using a tire repair kit to insert a rubber plug or patch.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
 
@@ -807,6 +895,25 @@
         autoplayTimeout: 3000
       });
     });
+
+
+    $('.blog-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+
 
 
 

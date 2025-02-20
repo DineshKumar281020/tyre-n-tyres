@@ -392,45 +392,35 @@ th {
 
 /*BLOGS*/
 
-
-.blogs {
-  padding: 0 0 40px;
+.blog-tyre{
+  padding: 0 40px 40px;
 }
 
-.blogs .blog-title {
+.blog-tyre h2{
   font-weight: bold;
   font-size: 40px;
-  text-align: center;
 }
 
-.blogs .blog-subtitle{
-  color: #666;
-  text-align: center;
+.blog-tyre .service-details {
+  padding: 20px;
 }
 
-.blogs h3{
-  font-weight: bold;
-}
-
-.blogs .blog-content {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.blogs .read-more {
-  color: #dc3545;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.blogs .read-more:hover {
-  text-decoration: underline;
-}
-
-.blogs img {
-  width: 100%;
+.blog-tyre .service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  min-height: 100%;
+}
+
+.blog-tyre .offset-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-tyre .col-md-4 {
+  margin-top: 30px;
 }
 
 /*BRANDS*/
@@ -1257,105 +1247,7 @@ th {
 
 /*BLOGS*/
 
-/* Extra Large Devices (1200px and above) */
-@media (max-width: 1200px) {
-  .blogs {
-    padding: 0 0 35px;
-  }
-  .blogs .blog-title {
-    font-size: 36px;
-  }
-  .blogs h3{
-    font-size: 28px;
-  }
-  .blogs .blog-content {
-    font-size: 17px;
-  }
-}
 
-/* Large Devices (992px and below) */
-@media (max-width: 992px) {
-  .blogs {
-    padding: 0 0 30px;
-  }
-  .blogs .blog-title {
-    font-size: 32px;
-  }
-  .blogs .blog-content {
-    font-size: 16px;
-  }
-  .blogs .read-more {
-    font-size: 15px;
-  }
-  .blogs h3{
-    font-size: 26px;
-  }
-}
-
-/* Medium Devices (768px and below) */
-@media (max-width: 768px) {
-  .blogs {
-    padding: 0 0 25px;
-  }
-  .blogs .blog-title {
-    font-size: 28px;
-  }
-  .blogs .blog-subtitle {
-    font-size: 14px;
-  }
-  .blogs h3{
-    font-size: 26px;
-  }
-  .blogs .blog-content {
-    font-size: 15px;
-  }
-  .blogs .image-container img {
-    border-radius: 8px;
-  }
-}
-
-/* Small Devices (576px and below) */
-@media (max-width: 576px) {
-  .blogs {
-    padding: 0 10px 20px;
-  }
-  .blogs .blog-title {
-    font-size: 24px;
-  }
-  .blogs h3{
-    font-size: 22px;
-  }
-  .blogs .blog-content {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-top: 10px;
-  }
-  .blogs .image-container img {
-    border-radius: 6px;
-  }
-}
-
-/* Extra Small Devices (480px and below) */
-@media (max-width: 480px) {
-  .blogs {
-    padding: 0 5px 15px;
-  }
-  .blogs .blog-title {
-    font-size: 20px;
-  }
-  .blogs h3{
-    font-size: 18px;
-  }
-  .blogs .blog-content {
-    font-size: 13px;
-  }
-  .blogs .read-more {
-    font-size: 14px;
-  }
-  .blogs .image-container img {
-    border-radius: 5px;
-  }
-}
 
 /*BRANDS*/
 
