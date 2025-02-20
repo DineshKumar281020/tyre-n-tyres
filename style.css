@@ -1323,7 +1323,7 @@ th {
 /* Extra Small Devices (480px and below) */
 @media (max-width: 480px) {
   .blogs {
-    padding: 0 5px 20px;
+    padding: 0 5px 15px;
   }
   .blogs .blog-title {
     font-size: 20px;
