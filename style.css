@@ -424,7 +424,7 @@ th {
   text-decoration: underline;
 }
 
-.blogs .image-container img {
+.blogs img {
   width: 100%;
   border-radius: 10px;
 }
@@ -715,6 +715,22 @@ th {
 @media (max-width: 480px) {
   .navbar-collapse {
       max-height: 300px; /* Adjust height as needed */
+  }
+}
+
+/*CONTENT-ALIGNMENT*/
+
+/* Hide first h3 on 576px and 480px */
+@media (max-width: 576px) {
+  .hide-small {
+      display: none;
+  }
+}
+
+/* Hide second h3 on 1200px, 992px, and 768px */
+@media (min-width: 768px) and (max-width: 2600px) {
+  .hide-large {
+      display: none;
   }
 }
 
@@ -1232,6 +1248,98 @@ th {
   .tyre-section button {
     font-size: 10px;
     padding: 4px 5px;
+  }
+}
+
+/*BLOGS*/
+
+/* Extra Large Devices (1200px and above) */
+@media (max-width: 1200px) {
+  .blogs .blog-title {
+    font-size: 36px;
+  }
+  .blogs h3{
+    font-size: 28px;
+  }
+  .blogs .blog-content {
+    font-size: 17px;
+  }
+}
+
+/* Large Devices (992px and below) */
+@media (max-width: 992px) {
+  .blogs .blog-title {
+    font-size: 32px;
+  }
+  .blogs .blog-content {
+    font-size: 16px;
+  }
+  .blogs .read-more {
+    font-size: 15px;
+  }
+  .blogs h3{
+    font-size: 26px;
+  }
+}
+
+/* Medium Devices (768px and below) */
+@media (max-width: 768px) {
+  .blogs {
+    padding: 0 10px 30px;
+  }
+  .blogs .blog-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .blogs h3{
+    font-size: 26px;
+  }
+  .blogs .blog-content {
+    font-size: 15px;
+  }
+  .blogs .image-container img {
+    border-radius: 8px;
+  }
+}
+
+/* Small Devices (576px and below) */
+@media (max-width: 576px) {
+  .blogs .blog-title {
+    font-size: 24px;
+  }
+  .blogs h3{
+    font-size: 22px;
+  }
+  .blogs .blog-content {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  .blogs .image-container img {
+    border-radius: 6px;
+  }
+}
+
+/* Extra Small Devices (480px and below) */
+@media (max-width: 480px) {
+  .blogs {
+    padding: 0 5px 20px;
+  }
+  .blogs .blog-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .blogs h3{
+    font-size: 18px;
+  }
+  .blogs .blog-content {
+    font-size: 13px;
+  }
+  .blogs .read-more {
+    font-size: 14px;
+  }
+  .blogs .image-container img {
+    border-radius: 5px;
   }
 }
 
