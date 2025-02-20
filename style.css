@@ -1255,6 +1255,9 @@ th {
 
 /* Extra Large Devices (1200px and above) */
 @media (max-width: 1200px) {
+  .blogs {
+    padding: 0 0 35px;
+  }
   .blogs .blog-title {
     font-size: 36px;
   }
@@ -1268,6 +1271,9 @@ th {
 
 /* Large Devices (992px and below) */
 @media (max-width: 992px) {
+  .blogs {
+    padding: 0 0 30px;
+  }
   .blogs .blog-title {
     font-size: 32px;
   }
@@ -1285,7 +1291,7 @@ th {
 /* Medium Devices (768px and below) */
 @media (max-width: 768px) {
   .blogs {
-    padding: 0 10px 30px;
+    padding: 0 0 25px;
   }
   .blogs .blog-title {
     font-size: 28px;
@@ -1304,6 +1310,9 @@ th {
 
 /* Small Devices (576px and below) */
 @media (max-width: 576px) {
+  .blogs {
+    padding: 0 10px 20px;
+  }
   .blogs .blog-title {
     font-size: 24px;
   }
