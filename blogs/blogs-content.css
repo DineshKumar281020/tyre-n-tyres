@@ -5,6 +5,7 @@
    background-size: cover;
    background-position: center;
    height: 300px;
+   width: 84%;
    position: relative;
  }
 
@@ -59,47 +60,47 @@
 
  /*SIDEBAR*/
 
- .sidebar {
-  width: 30%;
-  background: #f8f9fa;
+ /* Sidebar styles */
+.sidebar {
+  width: 400px; /* Adjust width as needed */
+  background-color: #f8f9fa; /* Light gray background */
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 20px;
-  height: fit-content;  
-  /* height: 100vh; 
+  height: 100%;
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 25%; 
-  background-color: #f8f9fa;
-  padding: 20px;
-  overflow-y: auto;  */
+  top: 109px; /* Below the banner */
+  right: 0; /* Align to the right side */
+  overflow-y: auto;
+  border-left: 1px solid #ddd; /* Optional: Adds a border */
 }
 
-/* Sidebar Links */
-.service-btn-card ul {
+/* Sidebar heading */
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Sidebar list */
+.sidebar ul {
   list-style: none;
   padding: 0;
 }
 
-.service-btn-card ul li {
+.sidebar ul li {
   margin-bottom: 10px;
 }
 
-.service-btn {
-  display: block;
+.sidebar ul li a {
   text-decoration: none;
-  background: #dc3545;
-  color: white;
+  display: block;
   padding: 10px;
+  background-color: #dc3545;
+  color: white;
   border-radius: 5px;
-  text-align: center;
+  transition: 0.3s;
 }
 
-.service-btn:hover {
-  background: #eb8f98;
+.sidebar ul li a:hover {
+  background-color: #eb8f98;
 }
 
  /*TYRE-WEAR*/
@@ -127,6 +128,59 @@
   border-radius: 10px;
   object-fit: cover;
  }
+
+ /*TYRE-LIFE*/
+
+ 
+ /*2)Handling complaint & Handling ride disturbances*/
+
+ .tyre-disturbance .banner {
+  background-image: url('images/banner-content-2.jpg');
+  color: white;
+  text-align: center;
+  padding: 88px;
+  font-size: 24px;
+}
+
+.tyre-disturbance .banner h1{
+  font-weight: 700;
+  font-size: 48px;
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+  width: 270px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #f8f9fa;
+  padding: 120px 20px;
+  border-left: 2px solid #ddd;
+}
+
+/* Content Area */
+
+.tyre-disturbance .blog-image img {
+  width: 75%;
+}
+
+.tyre-disturbance .blog-image h2{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  margin-right: 270px;
+}
+
+.main-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
 
 
  /*MEDIA QUERIES*/
