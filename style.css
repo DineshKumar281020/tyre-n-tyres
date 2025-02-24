@@ -401,7 +401,7 @@ th {
   font-size: 40px;
 }
 
-/* .blog-tyre .service-details {
+.blog-tyre .service-details {
   padding: 20px;
 }
 
@@ -411,42 +411,7 @@ th {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  height: 100%;
-} */
-
-/* Ensure the carousel container and items use flexbox */
-.blog-tyre .blog-carousel {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-/* Flex-grow ensures all cards grow evenly */
-.blog-tyre .service-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Ensure images scale properly */
-.blog-tyre .service-card img {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
-}
-
-/* Force equal heights on the content area */
-.blog-tyre .service-details {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
+  min-height: 445px;
 }
 
 .blog-tyre .offset-image {
@@ -457,6 +422,76 @@ th {
 .blog-tyre .col-md-4 {
   margin-top: 30px;
 }
+
+/* .owl-prev, .owl-next {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev{
+ left: 0;
+ position: absolute;
+}
+
+.owl-prev span, .owl-next span{
+  font-size: 40px;
+}
+
+.owl-next{
+ right: 0;
+} */
+
+.owl-prev, .owl-next {
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensures buttons are above cards */
+}
+
+/* Position the buttons outside the card area */
+.owl-prev {
+  left: -40px;
+}
+
+.owl-next {
+  right: -40px;
+}
+
+/* Arrow icon size */
+.owl-prev span, .owl-next span {
+  font-size: 40px;
+  line-height: 1;
+}
+
+/* Hover effect */
+.owl-prev:hover, .owl-next:hover {
+  background-color: #666;
+  transform: translateY(-50%) scale(1.1);
+}
+
 
 /*BRANDS*/
 
@@ -1293,6 +1328,20 @@ th {
   .blog-tyre p{
     font-size: 16px;
   }
+
+  .owl-prev, .owl-next {
+    width: 38px;
+    height: 38px;
+  }
+  .owl-prev span, .owl-next span {
+    font-size: 36px;
+  }
+  .owl-prev {
+    left: -35px;
+  }
+  .owl-next {
+    right: -35px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1307,6 +1356,20 @@ th {
 
   .blog-tyre p{
     font-size: 15px;
+  }
+
+  .owl-prev, .owl-next {
+    width: 36px;
+    height: 36px;
+  }
+  .owl-prev span, .owl-next span {
+    font-size: 32px;
+  }
+  .owl-prev {
+    left: -30px;
+  }
+  .owl-next {
+    right: -30px;
   }
 }
 
@@ -1323,6 +1386,20 @@ th {
   .blog-tyre p{
     font-size: 14px;
   }
+
+  .owl-prev, .owl-next {
+    width: 34px;
+    height: 34px;
+  }
+  .owl-prev span, .owl-next span {
+    font-size: 28px;
+  }
+  .owl-prev {
+    left: -25px;
+  }
+  .owl-next {
+    right: -25px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1334,6 +1411,20 @@ th {
   .blog-tyre h2{
     font-size: 24px;
   }
+
+  .owl-prev, .owl-next {
+    width: 32px;
+    height: 32px;
+  }
+  .owl-prev span, .owl-next span {
+    font-size: 24px;
+  }
+  .owl-prev {
+    left: -20px;
+  }
+  .owl-next {
+    right: -20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1344,6 +1435,20 @@ th {
   
   .blog-tyre h2{
     font-size: 20px;
+  }
+
+  .owl-prev, .owl-next {
+    width: 30px;
+    height: 30px;
+  }
+  .owl-prev span, .owl-next span {
+    font-size: 26px;
+  }
+  .owl-prev {
+    left: -25px;
+  }
+  .owl-next {
+    right: -25px;
   }
 }
 
