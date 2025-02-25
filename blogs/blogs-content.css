@@ -43,10 +43,6 @@
    padding: 20px;
  }
 
- .blog-section .blog-image {
-   width: 65%;
- }
-
  .blog-section .blog-image img {
    width: 100%;
    border-radius: 8px;
@@ -61,8 +57,7 @@
  /*SIDEBAR*/
 
  
-.sidebar {
-  width: 400px; 
+.sidebar { 
   background-color: #f8f9fa; 
   padding: 20px;
   height: 100%;
