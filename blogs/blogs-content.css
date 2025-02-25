@@ -1,15 +1,15 @@
  /*BANNER*/
 
- .about-banner {
+ .banners .about-banner {
    background-image: url('images/banner-content-1.jpg');
    background-size: cover;
    background-position: center;
    height: 300px;
-   width: 84%;
+   width: 100%;
    position: relative;
  }
 
- .about-banner::before {
+ .banners .about-banner::before {
    content: '';
    position: absolute;
    top: 0;
@@ -17,41 +17,41 @@
    width: 100%;
    height: 100%;
    background-color: rgba(0, 0, 0, 0.5);
-   /* Adds dark overlay */
  }
 
- .about-banner .container {
+ .banners .about-banner .container {
    position: relative;
    z-index: 1;
  }
 
- .about-banner h1 {
+ .banners .about-banner h1 {
    font-size: 48px;
    font-weight: 700;
  }
 
- .about-banner p {
+ .banners .about-banner p {
    font-size: 18px;
    font-weight: 300;
  }
 
  /*BLOG IMAGE*/
 
- .blog-section {
+ .page .blog-section {
    display: flex;
    gap: 20px;
    padding: 20px;
  }
 
- .blog-section .blog-image img {
-   width: 100%;
+ .page .blog-section .blog-image img {
+   width: 775px;
+   height: 395px;
    border-radius: 8px;
+   object-fit: cover;
  }
 
- .blog-section h2{
+ .page .blog-section h2{
   font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 20px;
  }
 
  /*SIDEBAR*/
@@ -60,7 +60,7 @@
 .sidebar { 
   background-color: #f8f9fa; 
   padding: 20px;
-  height: 100%;
+  height: 800px;
   position: sticky;
   top: 109px; 
   right: 0; 
@@ -100,6 +100,10 @@
 
  /*TYRE-WEAR*/
 
+ .tyre-wear{
+  padding: 20px 20px 0;
+ }
+
  .tyre-wear h2{
   margin-bottom: 20px;
   font-weight: bold;
@@ -121,6 +125,10 @@
  }
 
  /*TYRE-LIFE*/
+
+ .tyre-life{
+  padding: 40px 20px;
+ }
 
  .tyre-life h2{
   margin-bottom: 20px;
@@ -151,19 +159,6 @@
 .tyre-disturbance .banner h1{
   font-weight: 700;
   font-size: 48px;
-}
-
-
-/* Sidebar Styling */
-.sidebar {
-  width: 270px;
-  height: 100vh;
-  position: fixed;
-  right: 0;
-  top: 0;
-  background-color: #f8f9fa;
-  padding: 120px 20px;
-  border-left: 2px solid #ddd;
 }
 
 /* Content Area */
