@@ -192,6 +192,12 @@
     min-height: 100%;
   }
   
+  .tyre-cards .service-card .head{
+    color: #212529;
+    text-decoration: none;
+  }
+
+  
   .tyre-cards .service-card:hover {
     transform: translateY(-5px);
   }
