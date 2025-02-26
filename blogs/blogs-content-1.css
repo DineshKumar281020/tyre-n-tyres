@@ -107,7 +107,7 @@
 
  /*SIDEBAR*/
 
- .sidebar {
+ /* .sidebar {
    background-color: #f8f9fa;
    padding: 20px;
    height: 800px;
@@ -118,13 +118,12 @@
    border-left: 1px solid #ddd;
  }
 
- /* Sidebar heading */
  .sidebar h2 {
    font-size: 24px;
    margin-bottom: 15px;
  }
 
- /* Sidebar list */
+ 
  .sidebar ul {
    list-style: none;
    padding: 0;
@@ -146,9 +145,67 @@
 
  .sidebar ul li a:hover {
    background-color: #eb8f98;
- }
+ } */
+
+ .service-page .form-appoinment,
+.service-btn-card {
+  border: 1px solid var(--theme-color-light);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.service-btn-card ul {
+  padding: 0;
+}
+
+.service-btn {
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid var(--theme-color-dark);
+  margin-bottom: 1rem;
+}
+
+.service-btn.active {
+  color: #fff;
+  background-color: var(--theme-color-dark);
+}
 
 
+.service-page .form-appoinment,
+.service-btn-card {
+  border: 1px solid var(--theme-color-light);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.service-btn-card ul {
+  padding: 0;
+}
+
+.service-btn {
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid var(--theme-color-dark);
+  margin-bottom: 1rem;
+}
+
+.service-btn.active {
+  color: #fff;
+  background-color: var(--theme-color-dark);
+}
+
+.service-page .form-appoinment,
+.service-btn-card {
+  border: 1px solid var(--font-color-light);
+  border-radius: 10px;
+  padding: 1rem;
+}
 
 
 
