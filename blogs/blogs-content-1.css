@@ -1,0 +1,563 @@
+ /*1)How do you find out tyre life?*/
+
+ /*BANNER*/
+
+ .banners .about-banner {
+   background-image: url('images/banner-content-1.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 300px;
+   width: 100%;
+   position: relative;
+ }
+
+ .banners .about-banner::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .banners .about-banner .container {
+   position: relative;
+   z-index: 1;
+ }
+
+ .banners .about-banner h1 {
+   font-size: 48px;
+   font-weight: 700;
+ }
+
+ .banners .about-banner p {
+   font-size: 18px;
+   font-weight: 300;
+ }
+
+ /*BLOG IMAGE*/
+
+ .page .blog-section {
+   display: flex;
+   gap: 20px;
+   padding: 20px;
+ }
+
+ .page .blog-section .blog-image img {
+   width: 100%;
+   height: 500px;
+   border-radius: 8px;
+   object-fit: cover;
+ }
+
+ .page .blog-section h2 {
+   font-weight: bold;
+   margin-top: 10px;
+ }
+
+
+ /*TYRE-WEAR*/
+
+ .tyre-wear {
+   padding: 20px 20px 0;
+ }
+
+ .tyre-wear h2 {
+   margin-bottom: 20px;
+   font-weight: bold;
+ }
+
+ .tyre-wear h3 {
+   font-weight: bold;
+ }
+
+ .tyre-wear .content-section {
+   margin-top: 30px;
+ }
+
+ .tyre-wear img {
+   width: 100%;
+   height: 300px;
+   border-radius: 10px;
+   object-fit: cover;
+ }
+
+ /*TYRE-LIFE*/
+
+ .tyre-life {
+   padding: 40px 20px;
+ }
+
+ .tyre-life h2 {
+   margin-bottom: 20px;
+   font-weight: bold;
+ }
+
+ .tyre-life .content-section {
+   margin-top: 30px;
+ }
+
+ .tyre-life img {
+   width: 100%;
+   height: 300px;
+   border-radius: 10px;
+   object-fit: cover;
+ }
+
+ /*SIDEBAR*/
+
+ .sidebar {
+   background-color: #f8f9fa;
+   padding: 20px;
+   height: 800px;
+   position: sticky;
+   top: 109px;
+   right: 0;
+   overflow-y: auto;
+   border-left: 1px solid #ddd;
+ }
+
+ /* Sidebar heading */
+ .sidebar h2 {
+   font-size: 24px;
+   margin-bottom: 15px;
+ }
+
+ /* Sidebar list */
+ .sidebar ul {
+   list-style: none;
+   padding: 0;
+ }
+
+ .sidebar ul li {
+   margin-bottom: 10px;
+ }
+
+ .sidebar ul li a {
+   text-decoration: none;
+   display: block;
+   padding: 10px;
+   background-color: #dc3545;
+   color: white;
+   border-radius: 5px;
+   transition: 0.3s;
+ }
+
+ .sidebar ul li a:hover {
+   background-color: #eb8f98;
+ }
+
+
+
+
+
+
+ /* Media Queries */
+
+ /*CONTENT-ALIGNMENT*/
+
+/* Hide first h3 on 576px and 480px */
+@media (max-width: 576px) {
+  .hide-small {
+      display: none;
+  }
+}
+
+/* Hide second h3 on 1200px, 992px, and 768px */
+@media (min-width: 768px) and (max-width: 2600px) {
+  .hide-large {
+      display: none;
+  }
+}
+
+ /*1)How do you find out tyre life?*/
+
+ /*BANNER*/
+
+ /* Extra Large Devices (1200px and above) */
+ @media (max-width: 1200px) {
+   .banners .about-banner {
+     height: 280px;
+   }
+
+   .banners .about-banner h1 {
+     font-size: 42px;
+   }
+
+   .banners .about-banner p {
+     font-size: 17px;
+   }
+ }
+
+ /* Large Devices (992px and below) */
+ @media (max-width: 992px) {
+   .banners .about-banner {
+     height: 260px;
+   }
+
+   .banners .about-banner h1 {
+     font-size: 36px;
+   }
+
+   .banners .about-banner p {
+     font-size: 16px;
+   }
+ }
+
+ /* Medium Devices (768px and below) */
+ @media (max-width: 768px) {
+   .banners .about-banner {
+     height: 240px;
+   }
+
+   .banners .about-banner h1 {
+     font-size: 26px;
+   }
+
+   .banners .about-banner p {
+     font-size: 15px;
+   }
+ }
+
+ /* Small Devices (576px and below) */
+ @media (max-width: 576px) {
+   .banners .about-banner {
+     height: 220px;
+   }
+
+   .banners .about-banner h1 {
+     font-size: 26px;
+   }
+
+   .banners .about-banner p {
+     font-size: 14px;
+   }
+ }
+
+ /* Extra Small Devices (480px and below) */
+ @media (max-width: 480px) {
+   .banners .about-banner {
+     height: 200px;
+   }
+
+   .banners .about-banner h1 {
+     font-size: 26px;
+   }
+
+   .banners .about-banner p {
+     font-size: 13px;
+   }
+ }
+
+
+ /*BLOG IMAGE*/
+
+ @media (max-width: 1200px) {
+   .page .blog-section {
+     gap: 15px;
+     padding: 18px;
+   }
+
+   .page .blog-section .blog-image img {
+     height: 450px;
+   }
+
+   .page .blog-section h2 {
+     font-size: 28px;
+   }
+ }
+
+ /* Large Devices (992px and below) */
+ @media (max-width: 992px) {
+   .page .blog-section {
+     flex-direction: column;
+     padding: 16px;
+   }
+
+   .page .blog-section .blog-image img {
+     height: 400px;
+   }
+
+   .page .blog-section h2 {
+     font-size: 26px;
+   }
+ }
+
+ /* Medium Devices (768px and below) */
+ @media (max-width: 768px) {
+   .page .blog-section {
+     gap: 10px;
+     padding: 14px;
+   }
+
+   .page .blog-section .blog-image img {
+     height: 350px;
+   }
+
+   .page .blog-section h2 {
+     font-size: 24px;
+   }
+ }
+
+ /* Small Devices (576px and below) */
+ @media (max-width: 576px) {
+   .page .blog-section {
+     padding: 12px;
+   }
+
+   .page .blog-section .blog-image img {
+     height: 300px;
+   }
+
+   .page .blog-section h2 {
+     font-size: 24px;
+   }
+ }
+
+ /* Extra Small Devices (480px and below) */
+ @media (max-width: 480px) {
+   .page .blog-section {
+     padding: 10px;
+   }
+
+   .page .blog-section .blog-image img {
+     height: 250px;
+   }
+
+   .page .blog-section h2 {
+     font-size: 24px;
+   }
+ }
+
+
+ /*TYRE-WEAR*/
+
+ @media (max-width: 1200px) {
+   .tyre-wear {
+     padding: 18px 18px 0;
+   }
+
+   .tyre-wear h2 {
+     font-size: 28px;
+   }
+
+   .tyre-wear img {
+     height: 280px;
+   }
+ }
+
+ /* Large Devices (992px and below) */
+ @media (max-width: 992px) {
+   .tyre-wear {
+     padding: 16px 16px 0;
+   }
+
+   .tyre-wear h2 {
+     font-size: 26px;
+   }
+
+   .tyre-wear img {
+     height: 250px;
+   }
+ }
+
+ /* Medium Devices (768px and below) */
+ @media (max-width: 768px) {
+   .tyre-wear {
+     padding: 14px 14px 0;
+   }
+
+   .tyre-wear h2 {
+     font-size: 24px;
+     margin-bottom: 10px;
+   }
+
+   .tyre-wear h3{
+    font-size: 22px;
+   }
+
+   .tyre-wear img {
+     height: 220px;
+   }
+ }
+
+ /* Small Devices (576px and below) */
+ @media (max-width: 576px) {
+   .tyre-wear {
+     padding: 12px 12px 0;
+   }
+
+   .tyre-wear h2 {
+     font-size: 24px;
+   }
+
+   .tyre-wear .content-section{
+    margin-top: 15px;
+   }
+
+   .tyre-wear img {
+     height: 200px;
+   }
+
+   .tyre-wear .wear-content{
+    margin-top: 5px;
+   }
+ }
+
+ /* Extra Small Devices (480px and below) */
+ @media (max-width: 480px) {
+   .tyre-wear {
+     padding: 10px 10px 0;
+   }
+
+   .tyre-wear h2 {
+     font-size: 24px;
+   }
+
+   .tyre-wear img {
+     height: 180px;
+   }
+ }
+
+ /*TYRE-LIFE*/
+
+ /* Extra Large Devices (1200px and above) */
+ @media (max-width: 1200px) {
+   .tyre-life {
+     padding: 35px 18px;
+   }
+
+   .tyre-life h2 {
+     font-size: 28px;
+   }
+
+   .tyre-life img {
+     height: 280px;
+   }
+ }
+
+ /* Large Devices (992px and below) */
+ @media (max-width: 992px) {
+   .tyre-life {
+     padding: 30px 16px;
+   }
+
+   .tyre-life h2 {
+     font-size: 26px;
+   }
+
+   .tyre-life img {
+     height: 250px;
+   }
+ }
+
+ /* Medium Devices (768px and below) */
+ @media (max-width: 768px) {
+   .tyre-life {
+     padding: 25px 14px;
+   }
+
+   .tyre-life h2 {
+     font-size: 24px;
+     margin-bottom: 10px;
+   }
+
+   .tyre-life img {
+     height: 220px;
+   }
+ }
+
+ /* Small Devices (576px and below) */
+ @media (max-width: 576px) {
+   .tyre-life {
+     padding: 20px 12px;
+   }
+
+   .tyre-life h2 {
+     font-size: 24px;
+   }
+
+   .tyre-life .content-section{
+    margin-top: 15px;
+   }
+
+   .tyre-life img {
+     height: 200px;
+   }
+
+   .tyre-life .life-content{
+    margin-top: 5px;
+   }
+ }
+
+ /* Extra Small Devices (480px and below) */
+ @media (max-width: 480px) {
+   .tyre-life {
+     padding: 15px 10px;
+   }
+
+   .tyre-life h2 {
+     font-size: 24px;
+   }
+
+   .tyre-life img {
+     height: 180px;
+   }
+ }
+
+ /*SIDEBAR*/
+
+ /* Extra Large Devices (1200px and above) */
+ @media (max-width: 1200px) {
+   .sidebar {
+     padding: 18px;
+     height: 750px;
+   }
+
+   
+ }
+
+ /* Large Devices (992px and below) */
+ @media (max-width: 992px) {
+   .sidebar {
+     padding: 16px;
+     height: 700px;
+   }
+
+   
+ }
+
+ /* Medium Devices (768px and below) */
+ @media (max-width: 768px) {
+   .sidebar {
+     padding: 14px;
+     height: 740px;
+   }
+
+   
+ }
+
+ /* Small Devices (576px and below) */
+ @media (max-width: 576px) {
+   .sidebar {
+     padding: 12px;
+     height: 440px;
+   }
+
+   .sidebar h2{
+    margin-bottom: 5px;
+   }
+
+   
+ }
+
+ /* Extra Small Devices (480px and below) */
+ @media (max-width: 480px) {
+   .sidebar {
+     padding: 10px;
+     height: 485px;
+   }
+
+   
+ }
